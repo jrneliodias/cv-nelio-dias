@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+    <title>CV Nélio Dias</title>
+    <style>
+      @page {
+        size: A4;
+        margin: 5px;
+      }
+      body {
+        font-family: Epilogue, Arial, sans-serif;
+        padding: 10px;
+        width: 210mm;
+        height: 297mm;
+      }
+      h1,
+      h2,
+      h3,
+      p {
+        color: #333;
+        margin: 0px;
+      }
+      h1 {
+        font-size: 24px;
+        text-align: center;
+      }
+      h2 {
+        font-size: 18px;
+        margin: 5px 0px;
+      }
+      h3 {
+        font-size: 16px;
+        margin: 5px 0px;
+        font-weight: semibold;
+        color: #464545;
+      }
+      p {
+        line-height: 1.2;
+        font-size: 14px;
+      }
+      ul {
+        list-style-type: none;
+        font-size: 14px;
+        padding: 5px 10px;
+        margin: 0px 0px;
+      }
+      li {
+        list-style-position: inside;
+        margin: 5px 0px;
+      }
+      li::marker {
+        margin: 2px 0px;
+      }
+      .tech {
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        margin: 0px;
+        padding: 4px;
+        font-size: 14px;
+      }
+      a {
+        color: #1a0dab;
+        text-decoration: none;
+        font-size: 14px;
+      }
+      .contact-info {
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        width: 70%;
+        margin: 0 auto;
+      }
+      .contact-info a {
+        display: flex;
+        margin-bottom: 5px;
+      }
+      .section {
+        margin-bottom: 10px;
+        margin-top: 10px;
+      }
+      .subsection {
+        margin-bottom: 10px;
+        margin-top: 10px;
+      }
+      .project-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .project-time {
+        font-size: 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>NÉLIO DIAS</h1>
+    <div class="section contact-info">
+      <a href="https://api.whatsapp.com/send?phone=5591989079292">(91)989079292</a>
+      <a href="mailto:jrneliodias@gmail.com">jrneliodias@gmail.com</a>
+      <a href="https://nelio-dias-portfolio.vercel.app/" target="_blank">Portfolio</a>
+      <a href="https://github.com/jrneliodias" target="_blank">Github</a>
+      <a href="https://www.linkedin.com/in/neliodias" target="_blank">Linkedin</a>
+    </div>
+
+    <div class="section">
+      <h2>RESUMO</h2>
+      <p>
+        Desenvolvedor Full-Stack com 3 anos de experiência. Desenvolvi o frontend de um e-commerce de rifas com 15.000 usuários ativos e resultou um lucro de 10% maior para o cliente, incluindo
+        autenticação, pagamento, e dashboards para Admin e Afiliados. Colaborei na construção da API em Java Spring Boot e integração com banco de dados PostgreSQL.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>TECNOLOGIAS</h2>
+      <ul class="tech">
+        <li>Javascript</li>
+        <li>Python</li>
+        <li>Next Js</li>
+        <li>PostgresSQL</li>
+        <li>Typescript</li>
+        <li>Jest Js</li>
+        <li>API REST</li>
+        <li>Docker</li>
+        <li>GIT/Github</li>
+        <li>MVC Pattern</li>
+        <li>React Js</li>
+        <li>Springboot</li>
+        <li>Node Js</li>
+        <li>Java</li>
+        <li>Express</li>
+        <li>Flask</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>EXPERIÊNCIA PROFISSIONAL</h2>
+      <div class="project-header">
+        <h3>Desenvolvedor Full-Stack - Go Tech DS</h3>
+        <span class="project-time">(MAI/2024 - ATUAL)</span>
+      </div>
+      <ul>
+        <li>Desenvolvi o frontend de um e-commerce de rifas para sorteios, com:</li>
+        <li>Camada de autenticação</li>
+        <li>Sistema de pagamento integrado</li>
+        <li>Níveis de usuários, com 15.000 usuários ativos</li>
+        <li>Dashboard administrativo do Admin para CRUD de campanhas, usuários, afiliados, cupons de desconto e pagamento de comissão</li>
+        <li>Dashboard do Afiliado para acompanhamento de vendas, ganhos e saques</li>
+        <li>Utilizei tecnologias como Next.js, React, TypeScript, Tanstack Query, React Hook Form, Zod e Zustand.</li>
+        <li>Colaborei na construção da API backend em Java Spring Boot, utilizando Hibernate, JPA, Docker e Swagger, com banco de dados PostgreSQL.</li>
+        <li>A aplicação está hospedada na AWS e vende rifas para sorteios de PCs gamer e eletrônicos, com pagamento via API do Mercado Livre.</li>
+        <li>Afiliados podem divulgar campanhas e ganhar comissão pelas vendas realizadas através de seus links.</li>
+        <li>O Admin gerencia toda a plataforma pelo dashboard, com autenticação JWT.</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>PROJETOS</h2>
+      <div class="subsection">
+        <div class="project-header">
+          <h3>VIDEO OBJECT DETECTIONS BY IA INTERFACE</h3>
+          <span class="project-time">(MAR/2024 - ABR/2024)</span>
+        </div>
+        <span>React | Vite | Typescript | Shadcn Ui | Vitest | Python | Flask | YOLOv8 | Open CV | Postgres | Docker</span>
+        <div class="subsection">
+          <p>
+            Objetivo: Construir a interface intuitiva de comunicação do usuário, o servidor para o processamento do video e o banco de dados para armazenar os resultados. Desse modo, o usuário envia
+            seu video para o servidor pela interface e, após o processamento é devolvido para o navegador.
+          </p>
+          <p>
+            Experiências com o projeto: Adquiri experiência ao trabalhar com um projeto com 3 servidores independentes. Desenvolvi toda estrutura do frontend, backend e banco de dados. Obtive
+            experiência na construção de API utilizando Flask e Python e na utilização do modelo YOLOv8 e Open CV.
+          </p>
+          <p>Distribuição: Criação de containers para cada servidor com docker-compose.</p>
+        </div>
+      </div>
+      <div class="subsection">
+        <div class="project-header">
+          <h3>LINGO - LANGUANGE EDUCATIONAL PLATAFORM</h3>
+          <span class="project-time">(MAR/2024 - MAI/2024)</span>
+        </div>
+        <span>Next Js | React | Typescript | Shadcn Ui | Clerk | Zustand | Stripe | Postgres | Drizzle ORM</span>
+        <div class="subsection">
+          <p>Resumo: Lingo é um projeto que cria uma plataforma de aprendizado de idiomas de forma gameficada semelhante o Duolingo.</p>
+          <p>
+            Objetivo: construir um sistema robusto e escalável para múltiplas linguagens, controle de usuários e pontuações. Além disso, é uma oportunidade de aplicar o Project Based Learning (PBL),
+            ou seja me atualizar e aprofundar meus conhecimentos na integrações de tecnologias com um desenvolvimento de um projeto open-source.
+          </p>
+          <p>
+            Features: Sistema personalizado para cada usuário, efeitos sonoros, sistema de tentativas com os corações, sistema de Pontos / XP, tabela de lideres com usuários, sistema de shop para
+            obter mais corações e assinatura de plano mensal.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>IDIOMA</h2>
+      <p>Inglês Avançado - C1 (cert.efset.org/84VXmr)</p>
+    </div>
+
+    <div class="section">
+      <h2>EDUCAÇÃO</h2>
+      <p><strong>Análise e Desenvolvimento de Sistemas</strong> - GRAN FACULDADE - 2º Semestre - Noturno</p>
+      <p><strong>Engenharia de Controle e Automação</strong> - IFPA Campus Belém - 2018 - 2023 (Concluído)</p>
+    </div>
+  </body>
+</html>
