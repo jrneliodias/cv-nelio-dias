@@ -45,74 +45,60 @@
             font-size: 14px;
         }
         ul {
-            list-style-type: none;
-            font-size: 14px;
-            padding: 5px 10px;
-            margin: 0px 0px;
-        }
-        li {
-            list-style-position: inside;
-            margin: 5px 0px;
-        }
-        li::marker {
-            margin: 2px 0px;
-        }
-        .tech {
-            display: grid;
-            grid-template-columns: repeat(8, 1fr);
-            margin: 0px;
-            padding: 4px;
-            font-size: 14px;
-        }
-        a {
-            color: #1a0dab;
-            text-decoration: none;
-            font-size: 14px;
-        }
-        .contact-info {
-            margin-top: 20px;
-            display: flex;
-            justify-content: space-between;
-            width: 70%;
-            margin: 0 auto;
-        }
-        .contact-info a {
-            display: flex;
-            margin-bottom: 5px;
-        }
-        .section {
-            margin-bottom: 10px;
-            margin-top: 10px;
-        }
-        .subsection {
-            margin-bottom: 10px;
-            margin-top: 10px;
-        }
-        .project-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .project-time {
-            font-size: 12px;
-        }
-        .language-switch {
-            text-align: center;
-          ;
-            display: flex;
-            justify-content: end;
-        }
-        .language-switch button {
-            background-color: transparent;
-            color: #333;
-            border: none;
-            cursor: pointer;
-            font-size: 10px;
-          
-        }
-        .language-switch button:hover {
-            text-decoration: underline;
-        }
+        font-size: 14px;
+        padding: 5px 15px;
+        margin: 0px 0px;
+      }
+      li {
+      
+        margin: 5px 0px;
+      }
+      li::marker {
+        margin: 2px 0px;
+      }
+      .tech {
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        margin: 0px;
+        padding: 4px;
+        font-size: 14px;
+        list-style-type: none;
+      }
+      a {
+        color: #1a0dab;
+        text-decoration: none;
+        font-size: 14px;
+      }
+      .contact-info {
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        width: 70%;
+        margin: 0 auto;
+      }
+      .contact-info a {
+        display: flex;
+        margin-bottom: 5px;
+      }
+      .section {
+        margin-bottom: 10px;
+        margin-top: 10px;
+      }
+      .subsection {
+        margin-bottom: 10px;
+        margin-top: 10px;
+      }
+      .project-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .project-time {
+        font-size: 12px;
+      }
+      .project-tech {
+        font-weight: bold
+      }
     </style>
     <script>
         function toggleLanguage() {
@@ -218,7 +204,7 @@
                 <h3 class="en" style="display:none;">VIDEO OBJECT DETECTIONS BY AI INTERFACE</h3>
                 <span class="project-time">(MAR/2024 - ABR/2024)</span>
             </div>
-            <span>React | Vite | Typescript | Shadcn Ui | Vitest | Python | Flask | YOLOv8 | Open CV | Postgres | Docker</span>
+            <span class=" project-tech">React | Vite | Typescript | Shadcn Ui | Vitest | Python | Flask | YOLOv8 | Open CV | Postgres | Docker</span>
             <div class="subsection">
                 <p class="pt">
                     Objetivo: Construir a interface intuitiva de comunicação do usuário, o servidor para o processamento do video e o banco de dados para armazenar os resultados. Desse modo, o usuário envia
@@ -244,7 +230,7 @@
                 <h3 class="en" style="display:none;">LINGO - LANGUAGE EDUCATIONAL PLATFORM</h3>
                 <span class="project-time">(MAR/2024 - MAI/2024)</span>
             </div>
-            <span>Next Js | React | Typescript | Shadcn Ui | Clerk | Zustand | Stripe | Postgres | Drizzle ORM</span>
+            <span class=" project-tech">Next Js | React | Typescript | Shadcn Ui | Clerk | Zustand | Stripe | Postgres | Drizzle ORM</span>
             <div class="subsection">
                 <p class="pt">Resumo: Lingo é um projeto que cria uma plataforma de aprendizado de idiomas de forma gameficada semelhante o Duolingo.</p>
                 <p class="en" style="display:none;">Summary: Lingo is a project that creates a gamified language learning platform similar to Duolingo.</p>
