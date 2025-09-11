@@ -3,10 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Nélio Dias - Desenvolvedor Full Stack com 4 anos de experiência em Next.js, React, TypeScript, Django e Spring Boot. Especialista em arquiteturas escaláveis e sistemas enterprise." />
+    <meta name="keywords" content="desenvolvedor full stack, React, Next.js, TypeScript, Django, Spring Boot, JavaScript, Python, desenvolvedor frontend, desenvolvedor backend, SvelteKit, APIs REST" />
+    <meta name="author" content="Nélio Dias" />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:title" content="Nélio Dias - Desenvolvedor Full Stack" />
+    <meta property="og:description" content="Desenvolvedor Full Stack com 4 anos de experiência, especializado em arquiteturas escaláveis e desenvolvimento enterprise-level." />
+    <meta property="og:type" content="profile" />
+    <meta property="og:url" content="https://nelio-dias-portfolio.vercel.app/" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
-    <title>CV Nélio Dias</title>
+    <title>Nélio Dias - Desenvolvedor Full Stack | React, Next.js, TypeScript, Python</title>
     <style>
       @page {
         size: A4;
@@ -73,7 +81,7 @@
 
       .tech {
         display: grid;
-        grid-template-columns: repeat(9, 1fr);
+        grid-template-columns: repeat(10, 1fr);
         margin: 0px;
         padding: 4px;
         font-size: 12px;
@@ -151,38 +159,41 @@
       <button onclick="toggleLanguage()">Change Language</button>
     </div>
 
-    <h1>NÉLIO DIAS</h1>
+    <header>
+      <h1 itemscope itemtype="https://schema.org/Person">
+        <span itemprop="name">NÉLIO DIAS</span>
+      </h1>
+    </header>
 
-    <div class="section contact-info">
-      <a href="https://api.whatsapp.com/send?phone=5591989079292">(91)989079292</a>
-      <a href="mailto:jrneliodias@gmail.com">jrneliodias@gmail.com</a>
-      <a href="https://nelio-dias-portfolio.vercel.app/" target="_blank">Portfolio</a>
-      <a href="https://github.com/jrneliodias" target="_blank">Github</a>
-      <a href="https://www.linkedin.com/in/neliodias" target="_blank">Linkedin</a>
-    </div>
+    <section class="section contact-info" itemscope itemtype="https://schema.org/Person">
+      <a href="https://api.whatsapp.com/send?phone=5591989079292" itemprop="telephone">(91)989079292</a>
+      <a href="mailto:jrneliodias@gmail.com" itemprop="email">jrneliodias@gmail.com</a>
+      <a href="https://nelio-dias-portfolio.vercel.app/" target="_blank" itemprop="url">Portfolio</a>
+      <a href="https://github.com/jrneliodias" target="_blank" itemprop="sameAs">Github</a>
+      <a href="https://www.linkedin.com/in/neliodias" target="_blank" itemprop="sameAs">Linkedin</a>
+    </section>
 
-    <article>
+    <section itemscope itemtype="https://schema.org/Person">
       <h2 class="pt">RESUMO</h2>
-      <p class="pt">
-        Desenvolvedor Full-Stack com 4 anos de experiência, especializado em arquiteturas escaláveis e desenvolvimento enterprise-level. Liderei equipes técnicas no desenvolvimento de soluções em Next.js, React e TypeScript, com destaque para um e-commerce que alcançou 15.000 usuários ativos e aumentou o lucro em 10%. Experiência sólida em construção de RESTful APIs com Django e Spring Boot, implementação de integrações críticas com AWS, Twilio e sistemas de pagamento white-label. Desenvolvedor especialista em checkouts de pagamento e APIs de integração financeira, com experiência em múltiplos métodos (cartão, Pix, boleto, débito direto). Demonstrado histórico de sucesso em modernização de sistemas legados, resultando em 40% de redução no tempo de carregamento e 25% de aumento em conversões. Proficiente em metodologias ágeis e colaboração cross-company.
+      <p class="pt" itemprop="description">
+        Desenvolvedor Full-Stack Sênior com 4+ anos construindo aplicações escaláveis para 15.000+ usuários. Especialista em React, Next.js, TypeScript, Django e Spring Boot. Lidero equipes técnicas e modernizo sistemas legados (40% faster, +25% conversão). Expert em checkouts de pagamento e integração de APIs financeiras (cartão, Pix, boleto). Experiência comprovada com AWS, Twilio, microserviços e metodologias ágeis.
       </p>
       
       <h2 class="en" style="display: none">SUMMARY</h2>
-      <p class="en" style="display: none">
-        Full-Stack Developer with 4 years of experience, specialized in scalable architectures and enterprise-level development. Led technical teams in developing solutions with Next.js, React, and TypeScript, notably an e-commerce platform that reached 15,000 active users and increased profits by 10%. Strong experience in building RESTful APIs with Django and Spring Boot, implementing critical integrations with AWS, Twilio, and white-label payment systems. Expert developer in payment checkouts and financial integration APIs, with experience in multiple methods (credit card, Pix, bank slip, direct debit). Proven track record in legacy system modernization, resulting in 40% reduction in loading time and 25% increase in conversions. Proficient in agile methodologies and cross-company collaboration.
+      <p class="en" style="display: none" itemprop="description">
+        Senior Full-Stack Developer with 4+ years building scalable applications for 15,000+ users. Expert in React, Next.js, TypeScript, Django, and Spring Boot. Lead technical teams and modernize legacy systems (40% faster, +25% conversion). Specialized in payment checkouts and financial API integration (credit card, Pix, bank slip). Proven experience with AWS, Twilio, microservices, and agile methodologies.
       </p>
-    </article>
+    </section>
 
-    <article>
-      <h2 class="pt">TECNOLOGIAS</h2>
-      <h2 class="en" style="display: none">TECHNOLOGIES</h2>
-      <ul class="tech">
+    <section itemscope itemtype="https://schema.org/ItemList">
+      <h2 class="pt" itemprop="name">TECNOLOGIAS</h2>
+      <h2 class="en" style="display: none" itemprop="name">TECHNOLOGIES</h2>
+      <ul class="tech" itemprop="itemListElement">
         <li>Javascript</li>
         <li>Python</li>
         <li>Next Js</li>
         <li>PostgresSQL</li>
         <li>Typescript</li>
-        <li>Jest Js</li>
         <li>API REST</li>
         <li>Docker</li>
         <li>Django</li>
@@ -194,18 +205,66 @@
         <li>Express</li>
         <li>Flask</li>
         <li>Nest Js</li>
-        <li>CI/CD</li>
+        <li>SvelteKit</li>
+        <li>Tailwind CSS</li>
+        <li>Vitest</li>
+        <li>Playwright</li>
+        <li>GitLab CI/CD</li>
+        <li>i18n</li>
       </ul>
-    </article>
+    </section>
 
-    <article>
+    <article itemscope itemtype="https://schema.org/Person">
       <h2 class="pt">EXPERIÊNCIA PROFISSIONAL</h2>
       <h2 class="en" style="display: none">PROFESSIONAL EXPERIENCE</h2>
-      <section>
+     
+      <article itemscope itemtype="https://schema.org/WorkExperience">
+        <div class="project-header">
+          <h3 class="pt">Desenvolvedor Full Stack Senior - Startamus/Nuuvem</h3>
+          <h3 class="en" style="display: none">Senior Full Stack Developer - Startamus (Gaming Platform)</h3>
+          <span class="project-time">(2025)</span>
+        </div>
+        <ul>
+          <li class="pt">
+            Desenvolvi plataforma web gaming completa que permite jogar games diretamente no navegador, implementando navegação por gamepad e teclado para acessibilidade.
+          </li>
+          <li class="pt">
+            Criei interface responsiva com carrossel de jogos, grids adaptativos e sistema de overlay com fullscreen e compartilhamento, utilizando SvelteKit 5 e TypeScript.
+          </li>
+          <li class="pt">
+            Implementei sistema de autenticação JWT com interceptadores automáticos e dashboard administrativo com métricas de jogos e usuários em tempo real.
+          </li>
+          <li class="pt">
+            Configurei internacionalização para 5 idiomas (EN, ES, PT, JA, ZH) e otimizei SEO com geração automática de sitemap.xml.
+          </li>
+          <li class="pt">
+            Estabeleci pipeline CI/CD completo com GitLab, containerização Docker e testes unitários (Vitest) e E2E (Playwright), garantindo qualidade e deploy contínuo.
+          </li>
+
+          <li class="en" style="display: none">
+            Developed complete web gaming platform that allows playing games directly in the browser, implementing gamepad and keyboard navigation for accessibility.
+          </li>
+          <li class="en" style="display: none">
+            Created responsive interface with game carousel, adaptive grids and overlay system with fullscreen and sharing, using SvelteKit 5 and TypeScript.
+          </li>
+          <li class="en" style="display: none">
+            Implemented JWT authentication system with automatic interceptors and administrative dashboard with real-time game and user metrics.
+          </li>
+          <li class="en" style="display: none">
+            Configured internationalization for 5 languages (EN, ES, PT, JA, ZH) and optimized SEO with automatic sitemap.xml generation.
+          </li>
+          <li class="en" style="display: none">
+            Established complete CI/CD pipeline with GitLab, Docker containerization and unit (Vitest) and E2E (Playwright) testing, ensuring quality and continuous deployment.
+          </li>
+        </ul>
+        <p class="project-tech pt"><strong>Stack:</strong> SvelteKit 5, TypeScript, Tailwind CSS, APIs REST, JWT, GitLab CI/CD, Docker, Vitest, Playwright</p>
+        <p class="project-tech en" style="display: none"><strong>Stack:</strong> SvelteKit 5, TypeScript, Tailwind CSS, REST APIs, JWT, GitLab CI/CD, Docker, Vitest, Playwright</p>
+      </article>
+      <article itemscope itemtype="https://schema.org/WorkExperience">
         <div class="project-header">
           <h3 class="pt">Front-end Engineer - Startamus/P4F</h3>
           <h3 class="en" style="display: none">Front-end Engineer - Startamus/P4F</h3>
-          <span class="project-time">(2025)</span>
+          <span class="project-time">(2024-2025)</span>
         </div>
         <ul>
           <li class="pt">
@@ -240,12 +299,12 @@
             Contributed to a flexible and scalable architecture, enabling fast customization through the API.
           </li>
         </ul>
-      </section>
-      <section>
+      </article>
+      <article itemscope itemtype="https://schema.org/WorkExperience">
         <div class="project-header">
           <h3 class="pt">Desenvolvedor Full-Stack Pleno - Startamus</h3>
           <h3 class="en" style="display: none">Mid Full-Stack Developer - Startamus</h3>
-          <span class="project-time">(OUT/2024 - ATUAL)</span>
+          <span class="project-time">(OUT/2022 - ATUAL)</span>
         </div>
         <ul>
           <li class="pt">
@@ -291,12 +350,12 @@
             Coordinated cross-functional teams using agile methodologies (Scrum/Kanban), prioritizing high-value deliverables and maintaining effective stakeholder communication.
           </li>
         </ul>
-      </section>
-      <section>
+      </article>
+      <article itemscope itemtype="https://schema.org/WorkExperience">
         <div class="project-header">
           <h3 class="pt">Desenvolvedor Full-Stack Pleno - Go Tech DS</h3>
           <h3 class="en" style="display: none">Mid Full-Stack Developer - Go Tech DS</h3>
-            <span class="project-time">(MAI/2024 - OUT/2024)</span>
+            <span class="project-time">(MAI/2022 - OUT/2022)</span>
         </div>
         <ul>
           <li class="pt">Desenvolvi frontend completo de plataforma e-commerce de rifas com Next.js, React, TypeScript e TanStack Query, alcançando 15.000 usuários ativos</li>
@@ -306,24 +365,24 @@
           <li class="en" style="display: none">Implemented JWT authentication, Mercado Livre payment integration and administrative dashboards for campaign, user and affiliate management</li>
           <li class="en" style="display: none">Contributed to backend development with Java Spring Boot, using Hibernate, PostgreSQL and Docker, with microservices architecture hosted on AWS</li>
         </ul>
-      </section>
-    </article>
+      </article>
+    </section>
 
 
-    <article>
+    <section itemscope itemtype="https://schema.org/Person">
       <h2 class="pt">IDIOMA</h2>
       <h2 class="en" style="display: none">LANGUAGE</h2>
       <p class="pt">Inglês Avançado - C1 (cert.efset.org/84VXmr)</p>
       <p class="en" style="display: none">Advanced English - C1 (cert.efset.org/84VXmr)</p>
-    </article>
+    </section>
 
-    <article>
+    <section itemscope itemtype="https://schema.org/EducationalOrganization">
       <h2 class="pt">EDUCAÇÃO</h2>
       <h2 class="en" style="display: none">EDUCATION</h2>
       <p class="pt"><strong>Análise e Desenvolvimento de Sistemas</strong> - GRAN FACULDADE</p>
       <p class="pt"><strong>Engenharia de Controle e Automação</strong> - IFPA Campus Belém</p>
       <p class="en" style="display: none"><strong>Systems Analysis and Development</strong> - GRAN FACULDADE</p>
       <p class="en" style="display: none"><strong>Control and Automation Engineering</strong> - IFPA Campus Belém</p>
-    </article>
+    </section>
   </body>
 </html>
