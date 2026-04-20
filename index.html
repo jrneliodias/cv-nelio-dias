@@ -176,12 +176,12 @@
     <article itemscope itemtype="https://schema.org/Person">
       <h2 class="pt">RESUMO</h2>
       <p class="pt" itemprop="description">
-        Desenvolvedor Full-Stack Sênior com 4+ anos construindo aplicações escaláveis para 15.000+ usuários. Especialista em React, Next.js, TypeScript, Django e Spring Boot. Lidero equipes técnicas e modernizo sistemas legados (40% faster, +25% conversão). Expert em checkouts de pagamento e integração de APIs financeiras (cartão, Pix, boleto). Experiência comprovada com AWS, Twilio, microserviços e metodologias ágeis.
+        Desenvolvedor Full-Stack Sênior com 4+ anos construindo aplicações escaláveis. Especialista em React, Next.js, TypeScript, NestJS, Django e Spring Boot. Experiência em SaaS healthtech com RBAC multi-tenant, conformidade LGPD e pipelines AWS (Cognito, Lambda, ECS). Lidero equipes técnicas e modernizo sistemas legados (40% faster, +25% conversão). Expert em checkouts de pagamento e integração de APIs financeiras.
       </p>
-      
+
       <h2 class="en" style="display: none">SUMMARY</h2>
       <p class="en" style="display: none" itemprop="description">
-        Senior Full-Stack Developer with 4+ years building scalable applications for 15,000+ users. Expert in React, Next.js, TypeScript, Django, and Spring Boot. Lead technical teams and modernize legacy systems (40% faster, +25% conversion). Specialized in payment checkouts and financial API integration (credit card, Pix, bank slip). Proven experience with AWS, Twilio, microservices, and agile methodologies.
+        Senior Full-Stack Developer with 4+ years building scalable applications. Expert in React, Next.js, TypeScript, NestJS, Django, and Spring Boot. Experience in healthtech SaaS with multi-tenant RBAC, LGPD compliance, and AWS pipelines (Cognito, Lambda, ECS). Lead technical teams and modernize legacy systems (40% faster, +25% conversion). Specialized in payment checkouts and financial API integration.
       </p>
     </article>
 
@@ -207,6 +207,9 @@
         <li>Docker</li>
         <li>CI/CD</li>
         <li>AWS</li>
+        <li>Prisma ORM</li>
+        <li>Firebase</li>
+        <li>Jest</li>
         <li>Vitest</li>
         <li>Playwright</li>
         <li>Git</li>
@@ -218,6 +221,53 @@
       <h2 class="pt">EXPERIÊNCIA PROFISSIONAL</h2>
       <h2 class="en" style="display: none">PROFESSIONAL EXPERIENCE</h2>
      
+      <article itemscope itemtype="https://schema.org/WorkExperience">
+        <div class="project-header">
+          <h3 class="pt">Desenvolvedor Full-Stack Sênior - ALLM (Plataforma SaaS Médica)</h3>
+          <h3 class="en" style="display: none">Senior Full-Stack Developer - ALLM (Medical SaaS Platform)</h3>
+          <span class="project-time">(2025 - 2026)</span>
+        </div>
+        <ul>
+          <li class="pt">
+            Projetei e implementei o <strong>backend completo de uma plataforma SaaS B2B para comunidades médicas multi-tenant</strong> (ALLM) em NestJS 11 + TypeScript, habilitando fóruns, casos clínicos com schema dinâmico configurável por comunidade e notificações push multi-plataforma.
+          </li>
+          <li class="pt">
+            Arquitetei sistema de <strong>autorização granular por comunidade</strong> com 5 papéis hierárquicos, RBAC via guards compostos, bypass SUPERADMIN e <strong>audit trail forense</strong> — garantindo isolamento de dados entre tenants e conformidade LGPD.
+          </li>
+          <li class="pt">
+            Implementei <strong>pipeline de processamento de mídia</strong> via AWS Lambda com anonimização automática de imagens DICOM (remoção de PHI de pacientes) e status tracking assíncrono — eliminando exposição de dados sensíveis em uploads médicos.
+          </li>
+          <li class="pt">
+            Estruturei <strong>CI/CD em GitHub Actions</strong> com Docker multi-stage, migrations Prisma em Fargate isolado, deploy zero-downtime em ECS e injeção dinâmica de secrets do Secrets Manager por ambiente.
+          </li>
+          <li class="pt">
+            Construí <strong>sistema de notificações push</strong> com Firebase FCM, gerenciamento de device tokens por plataforma (Web/iOS/Android) e inbox in-app persistido com 20+ tipos de eventos.
+          </li>
+          <li class="pt">
+            Escrevi <strong>68 suites de testes Jest</strong> com 73K+ LOC de business rules em contextos autenticados; configurei OpenTelemetry com Winston estruturado para rastreamento distribuído em produção.
+          </li>
+
+          <li class="en" style="display: none">
+            Designed and implemented the <strong>full backend of a B2B multi-tenant medical SaaS platform</strong> (ALLM) with NestJS 11 + TypeScript, enabling private physician communities with forums, moderated clinical cases with community-configurable dynamic schemas, and multi-platform push notifications.
+          </li>
+          <li class="en" style="display: none">
+            Architected a <strong>per-community layered authorization system</strong> with 5 hierarchical roles, composed guards RBAC, SUPERADMIN bypass, and <strong>forensic audit logging</strong> — enforcing strict data isolation between tenants and LGPD compliance.
+          </li>
+          <li class="en" style="display: none">
+            Built a <strong>media processing pipeline</strong> via AWS Lambda with automated DICOM image anonymization (PHI removal) and async status tracking — eliminating sensitive data exposure in medical file uploads.
+          </li>
+          <li class="en" style="display: none">
+            Structured <strong>CI/CD in GitHub Actions</strong> with multi-stage Docker builds, isolated Prisma migrations on Fargate, zero-downtime ECS deployments, and dynamic secret injection per environment via Secrets Manager.
+          </li>
+          <li class="en" style="display: none">
+            Built a <strong>push notification system</strong> with Firebase FCM, cross-platform device token management (Web/iOS/Android), and persisted in-app inbox supporting 20+ event types.
+          </li>
+          <li class="en" style="display: none">
+            Wrote <strong>68 Jest test suites</strong> with 73K+ LOC of authenticated business-rule specs; configured OpenTelemetry with Winston structured logging for distributed tracing in production.
+          </li>
+        </ul>
+      </article>
+
       <article itemscope itemtype="https://schema.org/WorkExperience">
         <div class="project-header">
           <h3 class="pt">Desenvolvedor Full Stack Senior - Startamus/Nuuvem</h3>
