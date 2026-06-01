@@ -1,526 +1,109 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Nélio Dias - Desenvolvedor Full Stack com 4 anos de experiência em Next.js, React, TypeScript, Django e Spring Boot. Especialista em arquiteturas escaláveis e sistemas enterprise." />
-    <meta name="keywords" content="desenvolvedor full stack, React, Next.js, TypeScript, Django, Spring Boot, JavaScript, Python, desenvolvedor frontend, desenvolvedor backend, SvelteKit, APIs REST" />
+    <meta name="description" content="Nélio Dias — Desenvolvedor de Software. Selecione a versão do currículo." />
     <meta name="author" content="Nélio Dias" />
     <meta name="robots" content="index, follow" />
-    <meta property="og:title" content="Nélio Dias - Desenvolvedor Full Stack" />
-    <meta property="og:description" content="Desenvolvedor Full Stack com 4 anos de experiência, especializado em arquiteturas escaláveis e desenvolvimento enterprise-level." />
-    <meta property="og:type" content="profile" />
-    <meta property="og:url" content="https://nelio-dias-portfolio.vercel.app/" />
+    <title>Nélio Dias — Currículo</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
-    <title>Nélio Dias - Desenvolvedor Full Stack | React, Next.js, TypeScript, Python</title>
-    <style>
-      @page {
-        size: A4;
-        margin: 5px;
-      }
-
-      body {
-        font-family: Epilogue, Arial, sans-serif;
-        padding: 5mm 10mm;
-        width: 210mm;
-        height: 297mm;
-        margin: 0 auto;
-      }
-
-      h1,
-      h2,
-      h3,
-      p {
-        color: #333;
-        margin: 0px;
-      }
-
-      h1 {
-        font-size: 24px;
-        text-align: center;
-      }
-
-      h2 {
-        font-size: 18px;
-        margin: 5px 0px;
-      }
-
-      h3 {
-        font-size: 16px;
-        margin: 5px 0px;
-        font-weight: semibold;
-        color: #464545;
-      }
-
-      p {
-        line-height: 1.2;
-        font-size: 14px;
-      }
-
-      ul {
-        font-size: 14px;
-        padding: 5px 15px;
-        margin: 0px 0px;
-      }
-
-      li {
-        margin: 5px 0;
-        line-height: 1.3;
-      }
-
-      li::marker {
-        margin: 2px 0px;
-      }
-
-      article {
-        margin-bottom: 10px;
-        margin-top: 10px;
-      }
-
-      .tech {
-        display: grid;
-        grid-template-columns: repeat(12, 1fr);
-        margin: 0px;
-        padding: 2px;
-        font-size: 11px;
-        list-style-type: none;
-      }
-
-      a {
-        color: #1a0dab;
-        text-decoration: none;
-        font-size: 14px;
-      }
-
-      .contact-info {
-        margin-top: 20px;
-        display: flex;
-        justify-content: space-between;
-        width: 70%;
-        margin: 0 auto;
-      }
-
-      .contact-info a {
-        display: flex;
-        margin-bottom: 5px;
-      }
-
-      .subsection {
-        margin-bottom: 10px;
-        margin-top: 10px;
-      }
-
-      .project-header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-      }
-
-      .project-time {
-        font-size: 12px;
-      }
-
-      .project-tech {
-        font-weight: bold;
-      }
-
-      .language-switch {
-        text-align: center;
-        display: flex;
-        justify-content: end;
-      }
-
-      .language-switch button {
-        background-color: transparent;
-        color: #c4c4c4;
-        border: none;
-        cursor: pointer;
-        font-size: 10px;
-      }
-
-      .language-switch button:hover {
-        text-decoration: underline;
-      }
-    </style>
-    <script>
-      function toggleLanguage() {
-        const elementsPT = document.querySelectorAll(".pt");
-        const elementsEN = document.querySelectorAll(".en");
-        elementsPT.forEach((el) => (el.style.display = el.style.display === "none" ? "block" : "none"));
-        elementsEN.forEach((el) => (el.style.display = el.style.display === "none" ? "block" : "none"));
-      }
-    </script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Karla:wght@300;400;500&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/landing.css" />
   </head>
-
   <body>
-    <div class="language-switch">
-      <button onclick="toggleLanguage()">Change Language</button>
+    <div class="wrapper">
+      <header class="header">
+        <p class="header-label">Currículo</p>
+        <h1 class="header-name">Nélio <em>Dias</em></h1>
+        <div class="header-divider"></div>
+      </header>
+
+      <main class="cards">
+        <a class="card card--fe" href="./dev-fullstack.html" target="_blank">
+          <div class="card-dot"></div>
+          <span class="card-type">Frontend · Full Stack</span>
+          <h2 class="card-title">Desenvolvedor<br />Full Stack</h2>
+          <p class="card-subtitle">Pleno · 4+ anos</p>
+          <div class="card-divider"></div>
+          <div class="card-tags">
+            <span class="tag">React</span>
+            <span class="tag">Next.js</span>
+            <span class="tag">TypeScript</span>
+            <span class="tag">Node.js</span>
+            <span class="tag">AWS</span>
+            <span class="tag">REST APIs</span>
+            <span class="tag">Core Web Vitals</span>
+          </div>
+          <span class="card-cta">
+            Ver currículo
+            <svg class="cta-arrow" width="14" height="14" viewBox="0 0 14 14" fill="none">
+              <path d="M1 7h12M8 3l5 4-5 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </span>
+        </a>
+
+        <a class="card card--be" href="./dev-backend.html" target="_blank">
+          <div class="card-dot"></div>
+          <span class="card-type">Backend</span>
+          <h2 class="card-title">Desenvolvedor<br />Backend</h2>
+          <p class="card-subtitle">Pleno · 4+ anos</p>
+          <div class="card-divider"></div>
+          <div class="card-tags">
+            <span class="tag">Python</span>
+            <span class="tag">FastAPI</span>
+            <span class="tag">Django</span>
+            <span class="tag">PostgreSQL</span>
+            <span class="tag">AWS</span>
+            <span class="tag">Docker</span>
+            <span class="tag">Async</span>
+          </div>
+          <span class="card-cta">
+            Ver currículo
+            <svg class="cta-arrow" width="14" height="14" viewBox="0 0 14 14" fill="none">
+              <path d="M1 7h12M8 3l5 4-5 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </span>
+        </a>
+
+        <a class="card card--ft" href="./dev-frontend.html" target="_blank">
+          <div class="card-dot"></div>
+          <span class="card-type">Frontend</span>
+          <h2 class="card-title">Desenvolvedor<br />Frontend</h2>
+          <p class="card-subtitle">Pleno · 4+ anos</p>
+          <div class="card-divider"></div>
+          <div class="card-tags">
+            <span class="tag">React</span>
+            <span class="tag">Next.js</span>
+            <span class="tag">TypeScript</span>
+            <span class="tag">SvelteKit</span>
+            <span class="tag">Tailwind</span>
+            <span class="tag">Performance</span>
+            <span class="tag">AWS</span>
+          </div>
+          <span class="card-cta">
+            Ver currículo
+            <svg class="cta-arrow" width="14" height="14" viewBox="0 0 14 14" fill="none">
+              <path d="M1 7h12M8 3l5 4-5 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </span>
+        </a>
+      </main>
+
+      <footer class="footer">
+        <p class="footer-text">Disponível para novas oportunidades</p>
+        <p class="footer-contact">
+          <a href="mailto:jrneliodias@gmail.com">jrneliodias@gmail.com</a>
+          &nbsp;·&nbsp;
+          <a href="https://linkedin.com/in/neliodias" target="_blank">LinkedIn</a>
+          &nbsp;·&nbsp;
+          <a href="https://github.com/jrneliodias" target="_blank">GitHub</a>
+        </p>
+      </footer>
     </div>
-
-    <header>
-      <h1 itemscope itemtype="https://schema.org/Person">
-        <span itemprop="name">NÉLIO DIAS</span>
-      </h1>
-    </header>
-
-    <section class="section contact-info" itemscope itemtype="https://schema.org/Person">
-      <a href="https://api.whatsapp.com/send?phone=5591989079292" itemprop="telephone">(91)989079292</a>
-      <a href="mailto:jrneliodias@gmail.com" itemprop="email">jrneliodias@gmail.com</a>
-      <a href="https://nelio-dias-portfolio.vercel.app/" target="_blank" itemprop="url">Portfolio</a>
-      <a href="https://github.com/jrneliodias" target="_blank" itemprop="sameAs">Github</a>
-      <a href="https://www.linkedin.com/in/neliodias" target="_blank" itemprop="sameAs">Linkedin</a>
-    </section>
-
-    <article itemscope itemtype="https://schema.org/Person">
-      <h2 class="pt">RESUMO</h2>
-      <p class="pt" itemprop="description">
-        Desenvolvedor Full-Stack Pleno com 4+ anos construindo aplicações escaláveis. Especialista em React, Next.js, TypeScript, NestJS, Django e Spring Boot. Experiência em SaaS healthtech com RBAC multi-tenant, conformidade LGPD e pipelines AWS (Cognito, Lambda, ECS). Lidero equipes técnicas e modernizo sistemas legados (40% faster, +25% conversão). Expert em checkouts de pagamento e integração de APIs financeiras.
-      </p>
-
-      <h2 class="en" style="display: none">SUMMARY</h2>
-      <p class="en" style="display: none" itemprop="description">
-        Pleno Full-Stack Developer with 4+ years building scalable applications. Expert in React, Next.js, TypeScript, NestJS, Django, and Spring Boot. Experience in healthtech SaaS with multi-tenant RBAC, LGPD compliance, and AWS pipelines (Cognito, Lambda, ECS). Lead technical teams and modernize legacy systems (40% faster, +25% conversion). Specialized in payment checkouts and financial API integration.
-      </p>
-    </article>
-
-    <article itemscope itemtype="https://schema.org/ItemList">
-      <h2 class="pt" itemprop="name">TECNOLOGIAS</h2>
-      <h2 class="en" style="display: none" itemprop="name">TECHNOLOGIES</h2>
-      <ul class="tech" itemprop="itemListElement">
-        <li>Javascript</li>
-        <li>Typescript</li>
-        <li>React Js</li>
-        <li>Next Js</li>
-        <li>SvelteKit</li>
-        <li>Tailwind</li>
-        <li>Python</li>
-        <li>Java</li>
-        <li>Node Js</li>
-        <li>Django</li>
-        <li>Springboot</li>
-        <li>Express</li>
-        <li>Nest Js</li>
-        <li>API REST</li>
-        <li>PostgresSQL</li>
-        <li>Docker</li>
-        <li>CI/CD</li>
-        <li>AWS</li>
-        <li>Prisma ORM</li>
-        <li>Firebase</li>
-        <li>Jest</li>
-        <li>Vitest</li>
-        <li>Playwright</li>
-        <li>Git</li>
-        <li>i18n</li>
-      </ul>
-    </article>
-
-    <article itemscope itemtype="https://schema.org/Person">
-      <h2 class="pt">EXPERIÊNCIA PROFISSIONAL</h2>
-      <h2 class="en" style="display: none">PROFESSIONAL EXPERIENCE</h2>
-     
-      <article itemscope itemtype="https://schema.org/WorkExperience">
-        <div class="project-header">
-          <h3 class="pt">Desenvolvedor Backend Python — Cliente (Esthetic Fast Scheduler)</h3>
-          <h3 class="en" style="display: none">Backend Python Developer — Client Project (Esthetic Fast Scheduler)</h3>
-          <span class="project-time">(2026)</span>
-        </div>
-        <ul>
-          <li class="pt">
-            Desenvolvi backend em <strong>FastAPI</strong> para automação de agendamentos via WhatsApp para studios de estética, com
-            <strong>arquitetura multi-tenant</strong>, integração com Evolution API e fluxo conversacional completo em português.
-          </li>
-          <li class="pt">
-            Modelei banco de dados relacional com <strong>SQLAlchemy 2.0 + PostgreSQL</strong> (tenants, clientes, conversas, serviços, horários de
-            funcionamento, bloqueios, agendamentos e snapshots) e versionei migrações com Alembic.
-          </li>
-          <li class="pt">
-            Implementei <strong>webhook de mensagens WhatsApp</strong> com parser de payloads, deduplicação por mensagem do provedor, resolução de
-            identidade WhatsApp/LID e <strong>máquina de estados persistida</strong> para conduzir o fluxo conversacional.
-          </li>
-          <li class="pt">
-            Criei <strong>motor de disponibilidade de horários</strong> considerando horário comercial, bloqueios manuais, duração total de múltiplos
-            serviços, buffer entre atendimentos e conflitos com agendamentos pendentes ou confirmados.
-          </li>
-          <li class="pt">
-            Apliquei boas práticas: testes automatizados com <strong>Pytest</strong>, linting com <strong>Ruff</strong>, logs estruturados em JSON,
-            rate limiting em memória, migrações versionadas com seed de dados e configuração por variáveis de ambiente.
-          </li>
-
-          <li class="en" style="display: none">
-            Built a <strong>FastAPI</strong> backend for WhatsApp-based appointment automation for aesthetic studios, with
-            <strong>multi-tenant architecture</strong>, Evolution API integration, and complete conversational flow in Portuguese.
-          </li>
-          <li class="en" style="display: none">
-            Modeled relational database with <strong>SQLAlchemy 2.0 + PostgreSQL</strong> (tenants, clients, conversations, services, business hours,
-            blocks, bookings and service snapshots) versioned with Alembic.
-          </li>
-          <li class="en" style="display: none">
-            Implemented <strong>WhatsApp message webhook</strong> with payload parsing, provider message deduplication, WhatsApp/LID identity
-            resolution, and <strong>persisted state machine</strong> to drive conversational flow.
-          </li>
-          <li class="en" style="display: none">
-            Created <strong>availability engine</strong> considering business hours, manual blocks, total duration of multiple services, buffer
-            between appointments, and conflicts with pending or confirmed bookings.
-          </li>
-          <li class="en" style="display: none">
-            Applied best practices: automated testing with <strong>Pytest</strong>, linting with <strong>Ruff</strong>, structured JSON logs,
-            in-memory rate limiting, versioned migrations with data seeding, and environment-based configuration.
-          </li>
-        </ul>
-      </article>
-
-      <article itemscope itemtype="https://schema.org/WorkExperience">
-        <div class="project-header">
-          <h3 class="pt">Desenvolvedor Full-Stack Pleno - ALLM (Plataforma SaaS Médica)</h3>
-          <h3 class="en" style="display: none">Pleno Full-Stack Developer - ALLM (Medical SaaS Platform)</h3>
-          <span class="project-time">(2025 - 2026)</span>
-        </div>
-        <ul>
-          <li class="pt">
-            Projetei e implementei o <strong>backend completo de uma plataforma SaaS B2B para comunidades médicas multi-tenant</strong> (ALLM) em NestJS 11 + TypeScript, habilitando fóruns, casos clínicos com schema dinâmico configurável por comunidade e notificações push multi-plataforma.
-          </li>
-          <li class="pt">
-            Arquitetei sistema de <strong>autorização granular por comunidade</strong> com 5 papéis hierárquicos, RBAC via guards compostos, bypass SUPERADMIN e <strong>audit trail forense</strong> — garantindo isolamento de dados entre tenants e conformidade LGPD.
-          </li>
-          <li class="pt">
-            Implementei <strong>pipeline de processamento de mídia</strong> via AWS Lambda com anonimização automática de imagens DICOM (remoção de PHI de pacientes) e status tracking assíncrono — eliminando exposição de dados sensíveis em uploads médicos.
-          </li>
-          <li class="pt">
-            Estruturei <strong>CI/CD em GitHub Actions</strong> com Docker multi-stage, migrations Prisma em Fargate isolado, deploy zero-downtime em ECS e injeção dinâmica de secrets do Secrets Manager por ambiente.
-          </li>
-          <li class="pt">
-            Construí <strong>sistema de notificações push</strong> com Firebase FCM, gerenciamento de device tokens por plataforma (Web/iOS/Android) e inbox in-app persistido com 20+ tipos de eventos.
-          </li>
-          <li class="pt">
-            Escrevi <strong>68 suites de testes Jest</strong> com 73K+ LOC de business rules em contextos autenticados; configurei OpenTelemetry com Winston estruturado para rastreamento distribuído em produção.
-          </li>
-
-          <li class="en" style="display: none">
-            Designed and implemented the <strong>full backend of a B2B multi-tenant medical SaaS platform</strong> (ALLM) with NestJS 11 + TypeScript, enabling private physician communities with forums, moderated clinical cases with community-configurable dynamic schemas, and multi-platform push notifications.
-          </li>
-          <li class="en" style="display: none">
-            Architected a <strong>per-community layered authorization system</strong> with 5 hierarchical roles, composed guards RBAC, SUPERADMIN bypass, and <strong>forensic audit logging</strong> — enforcing strict data isolation between tenants and LGPD compliance.
-          </li>
-          <li class="en" style="display: none">
-            Built a <strong>media processing pipeline</strong> via AWS Lambda with automated DICOM image anonymization (PHI removal) and async status tracking — eliminating sensitive data exposure in medical file uploads.
-          </li>
-          <li class="en" style="display: none">
-            Structured <strong>CI/CD in GitHub Actions</strong> with multi-stage Docker builds, isolated Prisma migrations on Fargate, zero-downtime ECS deployments, and dynamic secret injection per environment via Secrets Manager.
-          </li>
-          <li class="en" style="display: none">
-            Built a <strong>push notification system</strong> with Firebase FCM, cross-platform device token management (Web/iOS/Android), and persisted in-app inbox supporting 20+ event types.
-          </li>
-          <li class="en" style="display: none">
-            Wrote <strong>68 Jest test suites</strong> with 73K+ LOC of authenticated business-rule specs; configured OpenTelemetry with Winston structured logging for distributed tracing in production.
-          </li>
-        </ul>
-      </article>
-
-      <article itemscope itemtype="https://schema.org/WorkExperience">
-        <div class="project-header">
-          <h3 class="pt">Desenvolvedor Full Stack Pleno - Startamus/Nuuvem</h3>
-          <h3 class="en" style="display: none">Pleno Full Stack Developer - Startamus (Gaming Platform)</h3>
-          <span class="project-time">(2025)</span>
-        </div>
-        <ul>
-          <li class="pt">
-            Desenvolvi plataforma web gaming completa que permite jogar games diretamente no navegador, implementando navegação por gamepad e teclado para acessibilidade.
-          </li>
-          <li class="pt">
-            Criei interface responsiva com carrossel de jogos, grids adaptativos e sistema de overlay com fullscreen e compartilhamento, utilizando SvelteKit 5 e TypeScript.
-          </li>
-          <li class="pt">
-            Implementei sistema de autenticação JWT com interceptadores automáticos e dashboard administrativo com métricas de jogos e usuários em tempo real.
-          </li>
-          <li class="pt">
-            Configurei internacionalização para 5 idiomas (EN, ES, PT, JA, ZH) e otimizei SEO com geração automática de sitemap.xml.
-          </li>
-          <li class="pt">
-            Estabeleci pipeline CI/CD completo com GitLab, containerização Docker e testes unitários (Vitest) e E2E (Playwright), garantindo qualidade e deploy contínuo.
-          </li>
-
-          <li class="en" style="display: none">
-            Developed complete web gaming platform that allows playing games directly in the browser, implementing gamepad and keyboard navigation for accessibility.
-          </li>
-          <li class="en" style="display: none">
-            Created responsive interface with game carousel, adaptive grids and overlay system with fullscreen and sharing, using SvelteKit 5 and TypeScript.
-          </li>
-          <li class="en" style="display: none">
-            Implemented JWT authentication system with automatic interceptors and administrative dashboard with real-time game and user metrics.
-          </li>
-          <li class="en" style="display: none">
-            Configured internationalization for 5 languages (EN, ES, PT, JA, ZH) and optimized SEO with automatic sitemap.xml generation.
-          </li>
-          <li class="en" style="display: none">
-            Established complete CI/CD pipeline with GitLab, Docker containerization and unit (Vitest) and E2E (Playwright) testing, ensuring quality and continuous deployment.
-          </li>
-        </ul>
-    
-      </article>
-      <article itemscope itemtype="https://schema.org/WorkExperience">
-        <div class="project-header">
-          <h3 class="pt"> Desenvolvedor Front-end - Startamus/P4F</h3>
-          <h3 class="en" style="display: none">Front-end Engineer - Startamus/P4F</h3>
-          <span class="project-time">(2024-2025)</span>
-        </div>
-        <ul>
-          <li class="pt">
-            Desenvolvi o <strong>checkout de pagamentos white-label</strong> utilizado por múltiplas lojas e corretoras de seguros (ex.: <strong>MAPFRE PAY</strong>), totalmente integrado à API de pagamentos.
-          </li>
-          <li class="pt">
-            Implementei rotas e fluxos completos em <strong>React</strong>, incluindo criação de ordens de pedido e customização do checkout por loja (cores, logo e formas de pagamento).
-          </li>
-          <li class="pt">
-            Adicionei suporte a diversos métodos: <strong>cartão de crédito, Pix, boleto e débito direto</strong>, com fluxos diferenciados de sucesso e falha.
-          </li>
-          <li class="pt">
-            Trabalhei em estreita colaboração com o time de <strong>Back-end, QA e PO</strong> para garantir qualidade, responsividade e experiência do usuário.
-          </li>
-          <li class="pt">
-            Contribuí para a arquitetura flexível e escalável do sistema, permitindo personalização rápida via API.
-          </li>
-
-          <li class="en" style="display: none">
-            Developed a <strong>white-label payment checkout</strong> used by multiple stores and insurance brokers (e.g., <strong>MAPFRE PAY</strong>), fully integrated with the payment API.
-          </li>
-          <li class="en" style="display: none">
-            Implemented complete flows and routes in <strong>React</strong>, including order creation and checkout customization per store (colors, logo, and payment methods).
-          </li>
-          <li class="en" style="display: none">
-            Added support for various payment methods: <strong>credit card, Pix, bank slip (boleto), and direct debit</strong>, with distinct flows for success and failure.
-          </li>
-          <li class="en" style="display: none">
-            Collaborated closely with the <strong>Back-end, QA, and Product Owner</strong> teams to ensure quality, responsiveness, and user experience.
-          </li>
-          <li class="en" style="display: none">
-            Contributed to a flexible and scalable architecture, enabling fast customization through the API.
-          </li>
-        </ul>
-      </article>
-      <article itemscope itemtype="https://schema.org/WorkExperience">
-        <div class="project-header">
-          <h3 class="pt">Desenvolvedor Full-Stack Pleno - Startamus</h3>
-          <h3 class="en" style="display: none">Mid Full-Stack Developer - Startamus</h3>
-          <span class="project-time">(OUT/2022 - 2024)</span>
-        </div>
-        <ul>
-          <li class="pt">
-            Liderei time técnico no desenvolvimento de dashboards administrativos enterprise-level utilizando tecnologias modernas como Next.js, React, TypeScript e TanStack Query, implementando
-            arquitetura escalável e práticas de clean code.
-          </li>
-          <li class="pt">
-            Gerenciei equipe de backend no desenvolvimento de RESTful APIs com Django Rest Framework, estabelecendo padrões de código, coordenando code reviews e garantindo alta performance em
-            aplicações web e mobile.
-          </li>
-          <li class="pt">
-            Arquitetei e implementei integrações críticas de sistema com serviços AWS S3, Twilio (SMS, WhatsApp, email) e banco de dados PostgreSQL, garantindo melhor uptime e segurança dos dados.
-          </li>
-          <li class="pt">Coordenei equipes multidisciplinares utilizando metodologias ágeis (Scrum/Kanban), priorizando entregas de alto valor e mantendo comunicação efetiva entre stakeholders.</li>
-          <li class="pt">
-            Liderei parceria estratégica para modernização de checkout em React legacy, implementando clean code e padrões de projeto, resultando em redução de 40% no tempo de carregamento e aumento
-            de 25% na taxa de conversão.
-          </li>
-          <li class="pt">
-            Colaborei com time cross-company de Product Owners e desenvolvedores backend para refatoração e ampliação de funcionalidades, estabelecendo práticas de code review e integração contínua.
-          </li>
-
-          <li class="en" style="display: none">
-            Led strategic partnership for modernization of legacy React checkout, implementing clean code and design patterns, resulting in 40% reduction in loading time and 25% increase in conversion
-            rate.
-          </li>
-          <li class="en" style="display: none">
-            Collaborated with cross-company team of Product Owners and backend developers for refactoring and feature expansion, establishing code review practices and continuous integration.
-          </li>
-
-          <li class="en" style="display: none">
-            Led technical team in developing enterprise-level administrative dashboards using modern technologies like Next.js, React, TypeScript and TanStack Query, implementing scalable architecture
-            and clean code practices.
-          </li>
-          <li class="en" style="display: none">
-            Managed backend team in developing RESTful APIs with Django Rest Framework, establishing coding standards, coordinating code reviews and ensuring high performance for web and mobile
-            applications.
-          </li>
-          <li class="en" style="display: none">
-            Architected and implemented critical system integrations with AWS S3, Twilio (SMS, WhatsApp, email) and PostgreSQL database, ensuring better uptime and data security.
-          </li>
-          <li class="en" style="display: none">
-            Coordinated cross-functional teams using agile methodologies (Scrum/Kanban), prioritizing high-value deliverables and maintaining effective stakeholder communication.
-          </li>
-        </ul>
-      </article>
-
-      <article itemscope itemtype="https://schema.org/WorkExperience">
-        <div class="project-header">
-          <h3 class="pt">Desenvolvedor Full-Stack - Gotech DS</h3>
-          <h3 class="en" style="display: none">Full-Stack Developer - Gotech DS</h3>
-          <span class="project-time">(MAI/2022 - OUT/2022)</span>
-        </div>
-        <ul>
-          <li class="pt">
-            Desenvolvi plataforma de e-commerce de rifas com <strong>16.000 usuários cadastrados</strong>, integrando gateway de pagamento do Mercado Pago e API Java para backend.
-          </li>
-          <li class="pt">
-            Criei dashboard administrativo completo para gerenciamento de sorteios, usuários e afiliados, com autenticação JWT e múltiplos níveis de acesso.
-          </li>
-          <li class="pt">
-            Construí dashboard financeiro para gerenciamento de empréstimos e cadastro de Fintech com <strong>2.000 usuários cadastrados</strong>.
-          </li>
-          <li class="pt">
-            Apliquei metodologias ágeis (Scrum), Git Flow e Docker em ambiente de trabalho colaborativo e remoto.
-          </li>
-
-          <li class="en" style="display: none">
-            Developed a raffle e-commerce platform with <strong>16,000 registered users</strong>, integrating Mercado Pago payment gateway and Java API for the backend.
-          </li>
-          <li class="en" style="display: none">
-            Built complete administrative dashboard for managing draws, users and affiliates, with JWT authentication and multiple access levels.
-          </li>
-          <li class="en" style="display: none">
-            Built financial dashboard for loan management and registration of a Fintech with <strong>2,000 registered users</strong>.
-          </li>
-          <li class="en" style="display: none">
-            Applied agile methodologies (Scrum), Git Flow and Docker in a collaborative remote work environment.
-          </li>
-        </ul>
-      </article>
-
-      <article itemscope itemtype="https://schema.org/WorkExperience">
-        <div class="project-header">
-          <h3 class="pt">Desenvolvedor Full-Stack - Universidade Federal do Pará (UFPA)</h3>
-          <h3 class="en" style="display: none">Full-Stack Developer - Federal University of Pará (UFPA)</h3>
-          <span class="project-time">(AGO/2021 - JAN/2022)</span>
-        </div>
-        <ul>
-          <li class="pt">
-            Desenvolvi o <strong>LABVCON v2.0</strong>, interface web em Python e Streamlit para aplicação de controladores avançados (IMC, GPC, GMV) em protótipos reais com Arduino, com monitoramento de dados e métricas de eficiência para ensino de Engenharia de Controle.
-          </li>
-          <li class="pt">
-            Construí o <strong>Web App Português Pai D'Égua</strong>, plataforma de ensino de português para refugiados venezuelanos com exercícios de leitura, áudio e escrita, usando Next.js, TypeScript, Next Auth, Tailwind CSS, Prisma e PostgreSQL.
-          </li>
-
-          <li class="en" style="display: none">
-            Developed <strong>LABVCON v2.0</strong>, a web interface in Python and Streamlit for applying advanced controllers (IMC, GPC, GMV) on real Arduino prototypes, with data monitoring and efficiency metrics for Control Engineering education.
-          </li>
-          <li class="en" style="display: none">
-            Built <strong>Web App Português Pai D'Égua</strong>, a Portuguese language learning platform for Venezuelan refugees with reading, audio and writing exercises, using Next.js, TypeScript, Next Auth, Tailwind CSS, Prisma and PostgreSQL.
-          </li>
-        </ul>
-      </article>
-
-    </section>
-
-    <section itemscope itemtype="https://schema.org/EducationalOrganization">
-      <h2 class="pt">EDUCAÇÃO</h2>
-      <h2 class="en" style="display: none">EDUCATION</h2>
-      <a class="pt" href="https://cert.efset.org/84VXmr" target="_blank"><strong>Inglês Avançado - C1 </strong></a>
-      <a class="en" style="display: none" href="https://cert.efset.org/84VXmr" target="_blank"><strong>Advanced English - C1 </strong></a>
-      <p class="pt"><strong>Análise e Desenvolvimento de Sistemas</strong> - GRAN FACULDADE</p>
-      <p class="pt"><strong>Engenharia de Controle e Automação</strong> - IFPA Campus Belém</p>
-      <p class="en" style="display: none"><strong>Systems Analysis and Development</strong> - GRAN FACULDADE</p>
-      <p class="en" style="display: none"><strong>Control and Automation Engineering</strong> - IFPA Campus Belém</p>
-    </section>
   </body>
 </html>
