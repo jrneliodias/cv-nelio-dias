@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+
 @page {
   size: A4;
   margin: 8mm;
@@ -16,7 +18,7 @@ body {
   min-height: 297mm;
   margin: 0 auto;
   padding: 7mm 11mm;
-  font-family: Epilogue, Arial, sans-serif;
+  font-family: "IBM Plex Sans", Arial, sans-serif;
   color: #2f2f2f;
   background: #fff;
 }
@@ -24,6 +26,7 @@ body {
 h1,
 h2,
 h3,
+h4,
 p {
   margin: 0;
 }
@@ -127,6 +130,10 @@ strong {
   white-space: nowrap;
   font-size: 10.5px;
   color: #555;
+}
+
+.project-list {
+  padding-left: 15px;
 }
 
 .company-context {

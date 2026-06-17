@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nélio Dias - Desenvolvedor Full Stack Pleno | Node.js, NestJS, React, AWS</title>
+    <link rel="stylesheet" href="css/cv.css" />
+    <style>
+      :root {
+        --skills-label-width: 29mm;
+      }
+    </style>
+  </head>
+  <body>
+    <header itemscope itemtype="https://schema.org/Person">
+      <h1 itemprop="name">NÉLIO DIAS</h1>
+      <p class="role-title">Desenvolvedor Full Stack Pleno | Node.js, NestJS, React, PostgreSQL, AWS</p>
+      <section class="contact-info">
+        <a href="https://api.whatsapp.com/send?phone=5591989079292" itemprop="telephone">(91) 98907-9292</a>
+        <a href="mailto:jrneliodias@gmail.com" itemprop="email">jrneliodias@gmail.com</a>
+        <a href="https://nelio-dias-portfolio.vercel.app/" target="_blank" itemprop="url">Portfólio</a>
+        <a href="https://github.com/jrneliodias" target="_blank" itemprop="sameAs">GitHub</a>
+        <a href="https://www.linkedin.com/in/neliodias" target="_blank" itemprop="sameAs">LinkedIn</a>
+      </section>
+    </header>
+    <main>
+      <section>
+        <h2>Resumo</h2>
+        <p class="summary" itemprop="description">
+          Desenvolvedor Full Stack Pleno com 4+ anos de experiência em startups e produtos SaaS, com ênfase em backend. Atuo com
+          <strong>Node.js, NestJS, TypeScript, React, PostgreSQL, Docker e AWS</strong>, com vivência em arquitetura orientada a eventos, mensageria
+          assíncrona com SQS, Serverless com Lambda, deploys em ECS/Fargate e microserviços. Experiência construindo APIs robustas, integrações com
+          serviços externos, cobertura de testes, observabilidade com logs estruturados e pipelines de CI/CD. Colaboro com times de Produto, QA e
+          Frontend, apoiando code reviews e decisões técnicas com foco em manutenção, segurança e impacto de negócio.
+        </p>
+      </section>
+
+      <section itemscope itemtype="https://schema.org/ItemList">
+        <h2 itemprop="name">Competências técnicas</h2>
+        <div class="skills-grid" itemprop="itemListElement">
+          <div class="skill-label">Backend</div>
+          <div class="skill-content">Node.js, NestJS, TypeScript, Python, FastAPI, Django REST Framework, Express, APIs REST/JSON</div>
+          <div class="skill-label">Mensageria</div>
+          <div class="skill-content">
+            AWS SQS, processamento assíncrono e orientado a eventos, desacoplamento de serviços, filas com rastreabilidade e resiliência
+          </div>
+          <div class="skill-label">Cloud AWS</div>
+          <div class="skill-content">Lambda (Serverless), SQS, S3, ECS/Fargate, Cognito, Secrets Manager, Docker, GitHub Actions, GitLab CI/CD</div>
+          <div class="skill-label">Banco de dados</div>
+          <div class="skill-content">PostgreSQL, Prisma ORM, SQLAlchemy, Alembic, modelagem relacional, migrações, consultas SQL e seeds</div>
+          <div class="skill-label">Arquitetura</div>
+          <div class="skill-content">
+            Microserviços, SaaS multi-tenant, RBAC, autenticação JWT, webhooks, integração entre serviços, escalabilidade
+          </div>
+          <div class="skill-label">Observabilidade</div>
+          <div class="skill-content">
+            Logs estruturados em JSON, rastreabilidade de filas e fluxos assíncronos, rate limiting, configuração por ambiente
+          </div>
+          <div class="skill-label">Qualidade</div>
+          <div class="skill-content">Jest, Pytest, testes unitários, testes de regras de negócio, code review, padrões de código e CI/CD</div>
+          <div class="skill-label">Frontend</div>
+          <div class="skill-content">React, Next.js, TypeScript, TanStack Query, Tailwind CSS, SvelteKit e consumo de APIs REST</div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Experiência profissional</h2>
+
+        <article class="experience-item" itemscope itemtype="https://schema.org/WorkExperience">
+          <div class="experience-header">
+            <h3>Desenvolvedor Full Stack Pleno - Startamus</h3>
+            <span class="period">Out/2022 - 2026</span>
+          </div>
+          <p class="company-context">Startup B2B de desenvolvimento de software — atuei em projetos para clientes de diferentes segmentos, incluindo SaaS médico, gaming e fintech</p>
+
+          <div class="project-list">
+            <div class="company-project">
+              <h4 class="project-name">Projeto com ALLM — Plataforma SaaS B2B para comunidades médicas</h4>
+              <ul class="compact-list">
+                <li>
+                  Implementei módulos backend em <strong>NestJS 11 + TypeScript</strong> para comunidades médicas com isolamento multi-tenant, fóruns,
+                  casos clínicos com schema configurável por comunidade e notificações multi-plataforma.
+                </li>
+                <li>
+                  Integrei <strong>AWS SQS</strong> para geração assíncrona de relatórios, desacoplando o processamento da requisição e garantindo
+                  rastreabilidade e resiliência das filas — padrão orientado a eventos em produção.
+                </li>
+                <li>
+                  Construí pipeline <strong>Serverless com AWS Lambda</strong> para processamento de mídia e anonimização de imagens médicas, com status
+                  assíncrono e disponibilização segura de arquivos via S3.
+                </li>
+                <li>
+                  Modelei autorização granular com <strong>RBAC, guards compostos, papéis hierárquicos e trilhas de auditoria</strong>, garantindo
+                  isolamento entre tenants e rastreabilidade de operações sensíveis.
+                </li>
+                <li>
+                  Estruturei pipeline de deploy com <strong>Docker, GitHub Actions, AWS ECS/Fargate e Secrets Manager</strong>, com execução segura de
+                  migrations por ambiente e configuração isolada por stage.
+                </li>
+                <li>
+                  Cobri regras críticas com testes em <strong>Jest</strong>, incluindo fluxos autenticados, permissões RBAC, isolamento de tenants e
+                  fluxos de notificação, apoiando code reviews e alinhamentos técnicos no time.
+                </li>
+              </ul>
+            </div>
+            <div class="company-project">
+              <h4 class="project-name">Dashboards administrativos e APIs REST</h4>
+              <ul class="compact-list">
+                <li>
+                  Desenvolvi e mantive APIs com <strong>Django REST Framework, PostgreSQL e integrações com AWS S3 e Twilio</strong>, apoiando
+                  funcionalidades web e mobile com foco em manutenção e qualidade.
+                </li>
+                <li>
+                  Contribuí na definição de padrões de código, organização de endpoints, revisões técnicas e CI/CD para melhorar previsibilidade e
+                  escalabilidade das entregas.
+                </li>
+              </ul>
+            </div>
+            <div class="company-project">
+              <h4 class="project-name">Projeto com P4F / MAPFRE Pay — Checkout white-label (Fintech)</h4>
+              <ul class="compact-list">
+                <li>
+                  Implementei integrações entre frontend e API de pagamentos para Pix, cartão, boleto e débito direto, em colaboração com Backend, QA e
+                  Produto para alinhar regras de negócio e experiência do usuário.
+                </li>
+                <li>
+                  Apoiei modernização de checkout legado em <strong>React</strong>, com redução de aproximadamente 40% no tempo de carregamento reportado,
+                  melhoria de organização e adoção de padrões de código.
+                </li>
+              </ul>
+            </div>
+            <div class="company-project">
+              <h4 class="project-name">Projeto com Nuuvem — Plataforma gaming de alta escala</h4>
+              <ul class="compact-list">
+                <li>
+                  Desenvolvi interface em <strong>SvelteKit 5 + TypeScript</strong> com autenticação JWT, dashboard administrativo, internacionalização e
+                  navegação por gamepad/teclado para plataforma com grande volume de usuários.
+                </li>
+                <li>
+                  Configurei <strong>GitLab CI/CD, Docker, Vitest e Playwright</strong> para deploy contínuo e validação automatizada de fluxos críticos.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <article class="experience-item" itemscope itemtype="https://schema.org/WorkExperience">
+          <div class="experience-header">
+            <h3>Desenvolvedor Full Stack - Gotech DS</h3>
+            <span class="period">Mai/2022 - Out/2022</span>
+          </div>
+          <ul class="compact-list">
+            <li>
+              Desenvolvi plataforma de e-commerce de rifas com aproximadamente <strong>16.000 usuários cadastrados</strong>, integrando gateway
+              Mercado Pago e API Java para backend, com autenticação JWT e múltiplos níveis de acesso.
+            </li>
+            <li>Trabalhei em ambiente remoto com Scrum, Git Flow e Docker, contribuindo em backend, frontend e integrações.</li>
+          </ul>
+        </article>
+
+        <article class="experience-item" itemscope itemtype="https://schema.org/WorkExperience">
+          <div class="experience-header">
+            <h3>Desenvolvedor Full Stack - Universidade Federal do Pará</h3>
+            <span class="period">Ago/2021 - Jan/2022</span>
+          </div>
+          <ul class="compact-list">
+            <li>
+              Desenvolvi o <strong>LABVCON v2.0</strong>, interface web em Python e Streamlit para controladores avançados em protótipos reais com
+              Arduino, com monitoramento de dados e métricas de eficiência.
+            </li>
+            <li>
+              Construí o <strong>Português Pai D'Égua</strong>, web app educacional usando Next.js, TypeScript, NextAuth, Tailwind CSS, Prisma e
+              PostgreSQL.
+            </li>
+          </ul>
+        </article>
+      </section>
+
+      <section>
+        <h2>Projeto complementar</h2>
+        <article class="experience-item">
+          <div class="experience-header">
+            <h3>Esthetic Fast Scheduler — Backend para agendamento via WhatsApp</h3>
+            <span class="period">2026</span>
+          </div>
+          <ul class="compact-list">
+            <li>
+              Backend em <strong>FastAPI</strong> para automação de agendamentos via WhatsApp, com integração à Evolution API, webhook de mensagens,
+              fluxo conversacional persistido e API administrativa.
+            </li>
+            <li>
+              Modelagem relacional com <strong>SQLAlchemy 2.0, PostgreSQL e Alembic</strong>, motor de disponibilidade com conflitos de agenda,
+              buffers de serviço, bloqueios manuais e status de agendamentos.
+            </li>
+            <li>
+              Observabilidade com <strong>logs estruturados em JSON</strong>, Pytest, Ruff, rate limiting e configuração por variáveis de ambiente —
+              projeto entregue com boas práticas de engenharia de ponta a ponta.
+            </li>
+          </ul>
+        </article>
+      </section>
+
+      <section>
+        <h2>Educação</h2>
+        <p class="education-row"><strong>Inglês Avançado - C1</strong> - EF SET Certificate</p>
+        <p class="education-row"><strong>Análise e Desenvolvimento de Sistemas</strong> - GRAN Faculdade</p>
+        <p class="education-row"><strong>Engenharia de Controle e Automação</strong> - IFPA Campus Belém</p>
+      </section>
+    </main>
+  </body>
+</html>
