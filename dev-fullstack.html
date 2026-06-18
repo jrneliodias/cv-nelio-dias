@@ -47,7 +47,8 @@
           Desenvolvedor Full Stack Pleno com 4+ anos de experiência em aplicações web, produtos SaaS, dashboards administrativos, checkouts de
           pagamento e integrações entre sistemas. Atuação com
           <strong>React, Next.js, TypeScript, Node.js, NestJS, Python, Django REST Framework, PostgreSQL e AWS</strong>, contribuindo com frontend,
-          APIs REST, modelagem de dados, autenticação, testes, CI/CD e evolução de sistemas legados. Experiência colaborando com times de Produto,
+          APIs REST, modelagem de dados, autenticação, testes, CI/CD e evolução de sistemas legados. Experiência em sistemas baseados em LLM com
+          LangChain e uso de Claude Code para acelerar workflows de desenvolvimento com automação de tarefas e TDD. Colabora com times de Produto,
           Backend, Frontend e QA, apoiando decisões técnicas, code reviews e entregas com foco em qualidade, manutenção e impacto de negócio.
         </p>
       </section>
@@ -72,6 +73,9 @@
 
           <div class="skill-label">Integrações</div>
           <div class="skill-content">Gateways de pagamento, webhooks, Twilio, Firebase FCM, Evolution API, APIs financeiras e mensageria</div>
+
+          <div class="skill-label">IA / LLM</div>
+          <div class="skill-content">LangChain, agentes com tool-calling, LLM multi-provider (Anthropic Claude, Google Gemini), IA conversacional, Claude Code</div>
         </div>
       </section>
 
@@ -108,6 +112,10 @@
                 <li>
                   Implementei notificações com Firebase FCM, gerenciamento de device tokens e inbox in-app persistido, além de testes automatizados com
                   Jest para regras críticas de negócio.
+                </li>
+                <li>
+                  Utilizou <strong>Claude Code</strong> com workflows de SDD e TDD para automatizar planejamento de tarefas e geração de testes,
+                  acelerando entregas em codebase NestJS de múltiplos módulos.
                 </li>
               </ul>
             </div>
@@ -209,18 +217,21 @@
           </div>
           <ul class="compact-list">
             <li>
-              Desenvolvi backend em <strong>FastAPI</strong> para automação de agendamentos via WhatsApp, com integração à Evolution API, fluxo
-              conversacional persistido e API administrativa.
+              Construí agente com <strong>LangChain e tool-calling</strong> com suporte multi-provider (Anthropic Claude e Google Gemini), ferramentas
+              customizadas para agendamento, cancelamento e histórico de clientes, e memória conversacional persistida no PostgreSQL.
             </li>
             <li>
-              Modelei banco relacional com <strong>SQLAlchemy 2.0, PostgreSQL e Alembic</strong>, incluindo clientes, conversas, serviços, horários de
-              funcionamento, bloqueios e agendamentos.
+              Desenvolvi backend em <strong>FastAPI</strong> integrado ao WhatsApp via Evolution API, com fluxo conversacional persistido, API
+              administrativa e configuração por tenant via variáveis de ambiente.
             </li>
             <li>
-              Implementei motor de disponibilidade considerando duração de serviços, buffers, bloqueios manuais, conflitos de agenda e status de
-              agendamentos.
+              Modelei esquema relacional com <strong>SQLAlchemy 2.0, PostgreSQL e Alembic</strong>, incluindo tenants, serviços, horários de
+              funcionamento, agendamentos e conversas.
             </li>
-            <li>Apliquei testes com Pytest, linting com Ruff, logs estruturados, rate limiting e configuração por variáveis de ambiente.</li>
+            <li>
+              Implementei motor de disponibilidade para múltiplos serviços com acumulação de duração, detecção de conflitos e buffers; apliquei Pytest,
+              logs estruturados e rate limiting.
+            </li>
           </ul>
         </article>
       </section>
