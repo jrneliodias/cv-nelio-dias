@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Nélio Dias - Desenvolvedor Full Stack com foco em React, Next.js e IA Generativa. Experiência com LLMs, agentes tool-calling, streaming de respostas e produtos SaaS B2B internacionais."
+    />
+    <meta
+      name="keywords"
+      content="Desenvolvedor Full Stack, React, Next.js, TypeScript, IA Generativa, LLM, LangChain, tool-calling, Anthropic Claude, SaaS B2B, streaming SSE"
+    />
+    <meta name="author" content="Nélio Dias" />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:title" content="Nélio Dias - Desenvolvedor Full Stack | React, Next.js e IA Generativa" />
+    <meta
+      property="og:description"
+      content="Desenvolvedor Full Stack com foco em frontend e IA Generativa. React, Next.js, TypeScript, LangChain, agentes LLM, Anthropic Claude e produtos SaaS B2B internacionais."
+    />
+    <meta property="og:type" content="profile" />
+    <meta property="og:url" content="https://nelio-dias-portfolio.vercel.app/" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+    <title>Nélio Dias - Desenvolvedor Full Stack | React, Next.js e IA Generativa</title>
+    <link rel="stylesheet" href="css/cv.css" />
+  </head>
+
+  <body>
+    <header itemscope itemtype="https://schema.org/Person">
+      <h1 itemprop="name">NÉLIO DIAS</h1>
+      <p class="role-title">Desenvolvedor Full Stack | React, Next.js e IA Generativa</p>
+      <section class="contact-info">
+        <a href="https://api.whatsapp.com/send?phone=5591989079292" itemprop="telephone">(91) 98907-9292</a>
+        <a href="mailto:jrneliodias@gmail.com" itemprop="email">jrneliodias@gmail.com</a>
+        <a href="https://nelio-dias-portfolio.vercel.app/" target="_blank" itemprop="url">Portfólio</a>
+        <a href="https://github.com/jrneliodias" target="_blank" itemprop="sameAs">GitHub</a>
+        <a href="https://www.linkedin.com/in/neliodias" target="_blank" itemprop="sameAs">LinkedIn</a>
+      </section>
+    </header>
+
+    <main>
+      <section>
+        <h2>Resumo</h2>
+        <p class="summary" itemprop="description">
+          Desenvolvedor Full Stack com 4+ anos de experiência e forte atuação em frontend, especializado em construção de interfaces e produtos baseados
+          em <strong>IA Generativa e LLMs</strong>. Trabalha com <strong>React, Next.js (App Router), TypeScript, TanStack Query e Tailwind CSS</strong>
+          no frontend, e Node.js, NestJS, Python e FastAPI no backend. Experiência prática com <strong>LangChain, agentes com tool-calling, APIs
+          Anthropic Claude e Google Gemini</strong>, fluxos conversacionais com memória persistida, streaming de tokens via LLM callbacks e padrões
+          human-in-the-loop. Usa <strong>Claude Code e Cursor</strong> como ferramentas de desenvolvimento diário — com workflows de SDD, TDD e
+          automação de entregas em codebases multi-módulo. Atuou em produtos <strong>SaaS B2B internacionais</strong>, checkouts de pagamento,
+          dashboards administrativos e integrações com APIs de mensageria, notificações e pagamentos.
+        </p>
+      </section>
+
+      <section itemscope itemtype="https://schema.org/ItemList">
+        <h2 itemprop="name">Competências técnicas</h2>
+        <div class="skills-grid" itemprop="itemListElement">
+          <div class="skill-label">Frontend</div>
+          <div class="skill-content">React, Next.js (App Router), TypeScript, Tailwind CSS, TanStack Query, gerenciamento de estado, Design Systems, SvelteKit, i18n</div>
+
+          <div class="skill-label">IA / LLM</div>
+          <div class="skill-content">LangChain, tool-calling, agentes multi-provider (Anthropic Claude, Google Gemini), RAG, MCP, streaming de respostas, IA conversacional, human-in-the-loop, Claude Code, Cursor</div>
+
+          <div class="skill-label">Backend</div>
+          <div class="skill-content">Node.js, NestJS, Python, FastAPI, Django REST Framework, APIs REST, OAuth2, Webhooks, autenticação JWT</div>
+
+          <div class="skill-label">Banco de dados</div>
+          <div class="skill-content">PostgreSQL, Prisma ORM, SQLAlchemy, Alembic, modelagem relacional, migrações e consultas SQL</div>
+
+          <div class="skill-label">Cloud e DevOps</div>
+          <div class="skill-content">AWS S3, AWS Lambda, AWS ECS/Fargate, Docker, CI/CD, GitHub Actions, GitLab CI, Secrets Manager</div>
+
+          <div class="skill-label">Qualidade</div>
+          <div class="skill-content">Git, code review, testes unitários e E2E, Jest, Pytest, Vitest, Playwright, logs estruturados, observabilidade</div>
+
+          <div class="skill-label">Integrações</div>
+          <div class="skill-content">Gateways de pagamento, webhooks, WhatsApp (Evolution API), Firebase FCM, Twilio, APIs financeiras e mensageria</div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Projeto de IA — Destaque</h2>
+        <article class="experience-item">
+          <div class="experience-header">
+            <h3>Esthetic Fast Scheduler — Agendamento Conversacional via WhatsApp com IA</h3>
+            <span class="period">2026</span>
+          </div>
+          <ul class="compact-list">
+            <li>
+              Construí agente com <strong>LangChain e tool-calling</strong> com suporte multi-provider (Anthropic Claude e Google Gemini), ferramentas
+              customizadas para agendamento, cancelamento e consulta de histórico do cliente, com streaming de tokens via callbacks do modelo.
+            </li>
+            <li>
+              Implementei interface conversacional via WhatsApp (Evolution API) com <strong>fluxo de chat persistido por sessão</strong>, memória
+              contextual no PostgreSQL, padrão <strong>human-in-the-loop</strong> para confirmação de ações antes da execução e tratamento de erros,
+              retries e rate limiting.
+            </li>
+            <li>
+              Arquitetei sistema de <strong>agente multi-tool</strong> com troca de provider via variável de ambiente, motor de disponibilidade com
+              acumulação de duração, detecção de conflitos e buffers entre agendamentos.
+            </li>
+            <li>
+              Desenvolveu backend em <strong>FastAPI</strong> com API administrativa por tenant, modelagem relacional com SQLAlchemy 2.0, Alembic e
+              suite de testes com Pytest e logs estruturados.
+            </li>
+          </ul>
+        </article>
+      </section>
+
+      <section>
+        <h2>Experiência profissional</h2>
+
+        <article class="experience-item" itemscope itemtype="https://schema.org/WorkExperience">
+          <div class="experience-header">
+            <h3>Desenvolvedor Full Stack Pleno - Startamus</h3>
+            <span class="period">Out/2022 - 2026</span>
+          </div>
+          <p class="company-context">Startup B2B de desenvolvimento de software — projetos para clientes em SaaS médico internacional, gaming e fintech</p>
+
+          <div class="project-list">
+            <div class="company-project">
+              <h4 class="project-name">Projeto com ALLM — Plataforma SaaS B2B Internacional para comunidades médicas</h4>
+              <ul class="compact-list">
+                <li>
+                  Implementei funcionalidades backend em <strong>NestJS 11 + TypeScript</strong> para comunidades médicas, fóruns e casos clínicos com
+                  schema configurável, notificações multi-plataforma (Firebase FCM + inbox in-app) e gerenciamento de device tokens por plataforma.
+                </li>
+                <li>
+                  Desenvolvi autorização granular por comunidade com RBAC, guards compostos, papéis hierárquicos, isolamento multi-tenant e trilhas de
+                  auditoria para operações sensíveis.
+                </li>
+                <li>
+                  Construí pipeline de mídia com <strong>AWS Lambda</strong> para processamento assíncrono e anonimização de imagens médicas; estruturei
+                  deploy com <strong>Docker, GitHub Actions, Prisma, AWS ECS/Fargate e Secrets Manager</strong>, apoiando ambientes isolados e execução
+                  segura de migrations.
+                </li>
+                <li>
+                  Usou <strong>Claude Code com workflows de SDD e TDD</strong> para automatizar planejamento de tarefas, geração de testes e revisão de
+                  código, acelerando entregas em codebase NestJS multi-módulo e reduzindo overhead de ciclo de desenvolvimento.
+                </li>
+              </ul>
+            </div>
+            <div class="company-project">
+              <h4 class="project-name">Projeto com P4F / MAPFRE Pay — Checkout white-label</h4>
+              <ul class="compact-list">
+                <li>
+                  Desenvolvi fluxos de checkout em <strong>React + TypeScript</strong> com criação de pedidos, customização por loja, estados de
+                  sucesso/falha e integração com API de pagamentos via webhooks; suporte a cartão de crédito, Pix, boleto e débito direto.
+                </li>
+                <li>
+                  Modernizei checkout legado em React, melhorando organização, padrões de código e reduzindo ~40% no tempo de carregamento reportado
+                  no projeto.
+                </li>
+              </ul>
+            </div>
+            <div class="company-project">
+              <h4 class="project-name">Dashboards administrativos e APIs REST</h4>
+              <ul class="compact-list">
+                <li>
+                  Desenvolvi dashboards com <strong>Next.js, React, TypeScript e TanStack Query</strong>, consumindo APIs REST e organizando fluxos de
+                  dados, filtros, permissões e Design System consistente entre módulos.
+                </li>
+                <li>
+                  Trabalhei em APIs com <strong>Django REST Framework, PostgreSQL e integrações com AWS S3 e Twilio</strong>, com autenticação via
+                  OAuth2 e JWT, code reviews e CI contínuo com GitHub Actions.
+                </li>
+              </ul>
+            </div>
+            <div class="company-project">
+              <h4 class="project-name">Projeto com Nuuvem — Plataforma web gaming</h4>
+              <ul class="compact-list">
+                <li>
+                  Desenvolvi interface web em <strong>SvelteKit 5 + TypeScript</strong> com catálogo de jogos, grids responsivos, autenticação JWT,
+                  internacionalização para 5 idiomas, SEO com sitemap automático e GitLab CI/CD com Vitest e Playwright.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <article class="experience-item" itemscope itemtype="https://schema.org/WorkExperience">
+          <div class="experience-header">
+            <h3>Desenvolvedor Full Stack - Gotech DS</h3>
+            <span class="period">Mai/2022 - Out/2022</span>
+          </div>
+          <ul class="compact-list">
+            <li>
+              Desenvolvi plataforma de e-commerce de rifas com ~<strong>16.000 usuários cadastrados</strong>, integrando Mercado Pago, dashboards
+              administrativos com múltiplos níveis de acesso, autenticação JWT e ambiente remoto com Scrum e Git Flow.
+            </li>
+          </ul>
+        </article>
+
+        <article class="experience-item" itemscope itemtype="https://schema.org/WorkExperience">
+          <div class="experience-header">
+            <h3>Desenvolvedor Full Stack - Universidade Federal do Pará</h3>
+            <span class="period">Ago/2021 - Jan/2022</span>
+          </div>
+          <ul class="compact-list">
+            <li>
+              Construí o <strong>Português Pai D'Égua</strong>, web app educacional para refugiados venezuelanos com Next.js, TypeScript, NextAuth
+              (OAuth2), Tailwind CSS, Prisma e PostgreSQL.
+            </li>
+          </ul>
+        </article>
+      </section>
+
+      <section>
+        <h2>Educação</h2>
+        <p class="education-row"><strong>Inglês Avançado - C1</strong> - EF SET Certificate</p>
+        <p class="education-row"><strong>Análise e Desenvolvimento de Sistemas</strong> - GRAN Faculdade</p>
+        <p class="education-row"><strong>Engenharia de Controle e Automação</strong> - IFPA Campus Belém</p>
+      </section>
+    </main>
+  </body>
+</html>
