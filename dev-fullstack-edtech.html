@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Nélio Dias - Full Stack Developer with experience in Next.js, React, Node.js, PostgreSQL, AWS, Redis, Webhooks and API Integrations."
+    />
+    <meta
+      name="keywords"
+      content="Full Stack Developer, Next.js, React, Node.js, NestJS, PostgreSQL, AWS, Redis, Webhooks, API Integrations, TypeScript, EdTech"
+    />
+    <meta name="author" content="Nélio Dias" />
+    <meta name="robots" content="index, follow" />
+    <title>Nélio Dias - Full Stack Developer | Next.js, React, Node.js, PostgreSQL, AWS, Redis</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/cv.css" />
+  </head>
+
+  <body>
+    <header itemscope itemtype="https://schema.org/Person">
+      <h1 itemprop="name">NÉLIO DIAS</h1>
+      <p class="role-title">Full Stack Developer | Next.js · React · Node.js · PostgreSQL · AWS · Redis</p>
+      <section class="contact-info">
+        <a href="https://api.whatsapp.com/send?phone=5591989079292" itemprop="telephone">(91) 98907-9292</a>
+        <a href="mailto:jrneliodias@gmail.com" itemprop="email">jrneliodias@gmail.com</a>
+        <a href="https://nelio-dias-portfolio.vercel.app/" target="_blank" itemprop="url">Portfolio</a>
+        <a href="https://github.com/jrneliodias" target="_blank" itemprop="sameAs">GitHub</a>
+        <a href="https://www.linkedin.com/in/neliodias" target="_blank" itemprop="sameAs">LinkedIn</a>
+      </section>
+    </header>
+
+    <main>
+      <section>
+        <h2>Summary</h2>
+        <p class="summary" itemprop="description">
+          Full Stack Developer with 4+ years of experience building web applications, SaaS platforms and AI-powered products using
+          <strong>Next.js, React, Node.js, PostgreSQL, AWS and Redis</strong>. Delivered production systems with complex
+          <strong>API integrations and webhook pipelines</strong> — including payment gateways, WhatsApp, Firebase FCM and financial APIs.
+          Experienced with <strong>Redis for caching and queue management</strong>, <strong>AWS Lambda, ECS/Fargate and S3</strong> in CI/CD
+          pipelines, and building <strong>LLM-based features</strong> with LangChain. Advanced English (C1), comfortable working async in
+          distributed teams.
+        </p>
+      </section>
+
+      <section itemscope itemtype="https://schema.org/ItemList">
+        <h2 itemprop="name">Technical Skills</h2>
+        <div class="skills-grid" itemprop="itemListElement">
+          <div class="skill-label">Frontend</div>
+          <div class="skill-content">Next.js, React, TypeScript, JavaScript, Tailwind CSS, TanStack Query, React Hook Form, Zod, i18next, HTML, CSS</div>
+
+          <div class="skill-label">Backend</div>
+          <div class="skill-content">Node.js, NestJS, Python, FastAPI, Django REST Framework, REST/JSON APIs, JWT authentication, Express</div>
+
+          <div class="skill-label">Database</div>
+          <div class="skill-content">PostgreSQL, Redis (caching, tokens, queues), MongoDB, Prisma ORM, SQLAlchemy, Alembic, relational modeling, migrations</div>
+
+          <div class="skill-label">AWS & DevOps</div>
+          <div class="skill-content">AWS S3, AWS Lambda, AWS ECS/Fargate, Secrets Manager, Docker, GitHub Actions, GitLab CI/CD, Jenkins, Firebase Hosting</div>
+
+          <div class="skill-label">Integrations</div>
+          <div class="skill-content">Webhooks (CRUD, ping, resend, request/response history), payment gateways (Mercado Pago, MAPFRE Pay), Pix, Twilio, Firebase FCM, WhatsApp API</div>
+
+          <div class="skill-label">AI / LLM</div>
+          <div class="skill-content">LangChain, tool-calling agents, Anthropic Claude API, Google Gemini, conversational AI with persistent memory</div>
+
+          <div class="skill-label">Quality</div>
+          <div class="skill-content">Git, Git Flow, code review, Jest, Pytest, Vitest, Playwright, structured logs, Sentry</div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Professional Experience</h2>
+
+        <article class="experience-item" itemscope itemtype="https://schema.org/WorkExperience">
+          <div class="experience-header">
+            <h3>Full Stack Developer - Startamus</h3>
+            <span class="period">Oct/2022 - 2026</span>
+          </div>
+          <p class="company-context">B2B software development startup — products delivered across medical SaaS, fintech and gaming segments</p>
+
+          <div class="project-list">
+            <div class="company-project">
+              <h4 class="project-name">Portal Billing — B2B Financial SPA (React, Next.js, TypeScript, Webhooks)</h4>
+              <ul class="compact-list">
+                <li>
+                  Built a B2B financial backoffice in <strong>React 19, TypeScript and Vite</strong> covering billing, commissions, receivables,
+                  CSV uploads and automated reports — 35 pages, 259 components and 61 domain hooks.
+                </li>
+                <li>
+                  Implemented a full <strong>webhook module</strong> with CRUD operations, ping, manual resend and request/response history;
+                  automated report delivery via email, FTP, FTPS and SFTP; i18n in PT-BR, EN and ES with i18next.
+                </li>
+                <li>
+                  Integrated <strong>REST APIs</strong> with Axios and <strong>TanStack Query</strong> for caching, pagination, query string
+                  filters and post-mutation invalidation; RBAC with route guards, permission-driven sidebar and JWT interceptors.
+                </li>
+                <li>
+                  Deployed via <strong>Jenkins and Firebase Hosting</strong>; observability with Sentry; export to PDF/XLS/JSON; white-label per
+                  domain.
+                </li>
+              </ul>
+            </div>
+
+            <div class="company-project">
+              <h4 class="project-name">Project with ALLM — B2B SaaS Platform for Medical Communities (Node.js, AWS, Redis)</h4>
+              <ul class="compact-list">
+                <li>
+                  Developed backend features in <strong>NestJS 11 + TypeScript</strong> for medical communities, forums and clinical cases with
+                  multi-platform notifications (Firebase FCM) and per-platform device token management.
+                </li>
+                <li>
+                  Used <strong>Redis as a cache and token store</strong> to reduce query latency and database load across high-traffic endpoints.
+                </li>
+                <li>
+                  Built a media pipeline with <strong>AWS Lambda</strong> for async processing and anonymization of medical images; structured
+                  deployment with <strong>Docker, GitHub Actions, AWS ECS/Fargate and Secrets Manager</strong>.
+                </li>
+                <li>
+                  Implemented granular RBAC with composite guards, hierarchical roles, tenant isolation and audit trails; applied
+                  <strong>Claude Code with TDD workflows</strong> to accelerate test generation across the multi-module codebase.
+                </li>
+              </ul>
+            </div>
+
+            <div class="company-project">
+              <h4 class="project-name">Admin Dashboards and REST APIs (Next.js, Django, PostgreSQL, AWS S3)</h4>
+              <ul class="compact-list">
+                <li>
+                  Developed admin dashboards with <strong>Next.js, React and TypeScript</strong> consuming REST APIs with filters, permissions
+                  and interface states.
+                </li>
+                <li>
+                  Built APIs with <strong>Django REST Framework, PostgreSQL</strong> and integrations with <strong>AWS S3 and Twilio</strong>;
+                  contributed to code reviews, CI practices and cross-functional deliveries.
+                </li>
+              </ul>
+            </div>
+
+            <div class="company-project">
+              <h4 class="project-name">Project with Nuuvem — Gaming Web Platform (Next.js, CI/CD, Docker)</h4>
+              <ul class="compact-list">
+                <li>
+                  Built a web interface in <strong>SvelteKit 5 + TypeScript</strong> with JWT authentication, internationalization for 5
+                  languages, SEO improvements and automatic sitemap generation.
+                </li>
+                <li>
+                  Configured delivery pipeline with <strong>GitLab CI/CD, Docker, Vitest and Playwright</strong>, supporting continuous
+                  deployment and automated E2E validation.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <article class="experience-item" itemscope itemtype="https://schema.org/WorkExperience">
+          <div class="experience-header">
+            <h3>Full Stack Developer - Gotech DS</h3>
+            <span class="period">May/2022 - Oct/2022</span>
+          </div>
+          <ul class="compact-list">
+            <li>
+              Developed a raffle e-commerce platform with approximately <strong>16,000 registered users</strong>, integrating
+              <strong>Mercado Pago payment gateway</strong> and a Java backend API.
+            </li>
+            <li>
+              Built admin dashboards for draws, users, affiliates and financial operations with JWT authentication and multi-level access;
+              worked with Scrum, Git Flow and Docker in a remote team.
+            </li>
+          </ul>
+        </article>
+
+        <article class="experience-item" itemscope itemtype="https://schema.org/WorkExperience">
+          <div class="experience-header">
+            <h3>Full Stack Developer - Federal University of Pará</h3>
+            <span class="period">Aug/2021 - Jan/2022</span>
+          </div>
+          <ul class="compact-list">
+            <li>
+              Built <strong>Português Pai D'Égua</strong>, an educational web app for Venezuelan refugees using <strong>Next.js, TypeScript,
+              NextAuth, Tailwind CSS, Prisma and PostgreSQL</strong>.
+            </li>
+          </ul>
+        </article>
+      </section>
+
+      <section>
+        <h2>Side Project</h2>
+        <article class="experience-item">
+          <div class="experience-header">
+            <h3>Esthetic Fast Scheduler — AI Booking Agent via WhatsApp</h3>
+            <span class="period">2026</span>
+          </div>
+          <ul class="compact-list">
+            <li>
+              Built a <strong>LangChain tool-calling agent</strong> with multi-provider LLM support (Anthropic Claude + Google Gemini), custom
+              tools for scheduling and cancellation, and conversational memory persisted in <strong>PostgreSQL</strong>.
+            </li>
+            <li>
+              Developed a <strong>FastAPI</strong> backend integrated with WhatsApp via Evolution API; modeled a relational schema with
+              SQLAlchemy 2.0, Alembic and PostgreSQL covering tenants, services, appointments and conversations.
+            </li>
+            <li>
+              Implemented a multi-service availability engine with conflict detection and buffer management; applied Pytest, structured logs
+              and rate limiting.
+            </li>
+          </ul>
+        </article>
+      </section>
+
+      <section>
+        <h2>Education</h2>
+        <p class="education-row"><strong>Advanced English - C1</strong> — EF SET Certificate</p>
+        <p class="education-row"><strong>Systems Analysis and Development</strong> — GRAN College</p>
+        <p class="education-row"><strong>Control and Automation Engineering</strong> — IFPA Campus Belém</p>
+      </section>
+    </main>
+  </body>
+</html>

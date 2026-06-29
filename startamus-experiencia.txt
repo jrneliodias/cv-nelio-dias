@@ -1,0 +1,33 @@
+Desenvolvedor Full Stack Pleno na Startamus, empresa B2B de desenvolvimento de software, onde atuei em projetos para clientes de diferentes segmentos como fintech, SaaS médico e gaming entre outubro de 2022 e 2026.
+
+No Portal Billing, desenvolvi do zero uma plataforma financeira B2B utilizando React 19, TypeScript e Vite. O sistema cobre operações de cobrança, inadimplência, comissões, recebíveis, webhooks, uploads CSV e relatórios automatizados enviados por email, FTP e SFTP. A aplicação cresceu para 35 páginas, 259 componentes e 61 hooks organizados por domínio, seguindo Clean Architecture. Implementei controle de acesso baseado em papéis com sidebar dinâmica e rotas restritas por permissão, autenticação via Axios interceptors com tratamento de expiração de sessão, suporte a múltiplos idiomas em português, inglês e espanhol, white-label por domínio e observabilidade com Sentry. O deploy foi configurado via Jenkins e Firebase Hosting.
+
+No projeto com ALLM, plataforma SaaS para comunidades médicas, desenvolvi o backend com NestJS 11 e TypeScript. Trabalhei em módulos para fóruns, casos clínicos com schema configurável e notificações multi-plataforma. Implementei autorização granular com papéis hierárquicos, isolamento entre tenants e trilhas de auditoria para operações sensíveis. Construí um pipeline assíncrono com AWS Lambda para processamento e anonimização de imagens médicas. Utilizei Redis para cache de queries e tokens, reduzindo latência e carga no banco. A infraestrutura foi configurada com Docker, GitHub Actions, Prisma, AWS ECS/Fargate e Secrets Manager. Adotei Claude Code com MCP e práticas de TDD para automatizar planejamento e geração de testes, o que acelerou as entregas em uma codebase com múltiplos módulos.
+
+No projeto com P4F/MAPFRE Pay, desenvolvi fluxos de checkout white-label em React integrados a uma API de pagamentos, com suporte a cartão de crédito, Pix, boleto e débito direto, em colaboração com equipes de backend, QA e produto. Contribuí na modernização do checkout legado, com melhoria na organização do código e redução de aproximadamente 40% no tempo de carregamento.
+
+Atuei também no desenvolvimento de dashboards administrativos com Next.js, React, TypeScript e TanStack Query, consumindo APIs REST com filtros avançados e estados de interface. No lado do backend, contribuí com APIs em Django REST Framework e PostgreSQL, integrações com AWS S3 e Twilio, code reviews e configuração de CI/CD.
+
+
+Vaga: Desenvolvedor(a) Python com AWS Jr. / Pl.
+💼 Contratação: CLT + Benefícios / Projeto até dezembro de 2026
+🏢 Regime: Home office
+Estamos buscando um(a) Desenvolvedor(a) Python com AWS Jr. / Pl para atuar em projetos desafiadores, contribuindo com o desenvolvimento e manutenção de soluções escaláveis, integrações e pipelines de dados em ambiente cloud.
+Principais atividades:
+✅ Desenvolvimento e manutenção de pipelines de dados utilizando Python;
+ ✅ Criação, consumo e manutenção de APIs RESTful;
+ ✅ Integração de sistemas e automação de processos;
+ ✅ Atuação com serviços AWS;
+ ✅ Aplicação de boas práticas de programação, testes automatizados e documentação técnica;
+ ✅ Trabalho colaborativo com times multidisciplinares.
+Requisitos:
+✔ Experiência sólida com Python;
+ ✔ Conhecimento em Requests, FastAPI, Flask ou frameworks similares;
+ ✔ Experiência com APIs RESTful e autenticação (OAuth2, JWT e API Keys);
+ ✔ Conhecimento em JSON, XML e integração de sistemas;
+ ✔ Experiência com bancos de dados relacionais e não relacionais (SQL Server, PostgreSQL, MongoDB ou similares);
+ ✔ Domínio de Git e versionamento de código;
+ ✔ Conhecimento em estruturas de dados, algoritmos e design de software;
+ ✔ Experiência com testes automatizados e boas práticas de desenvolvimento;
+ ✔ Vivência com AWS;
+📩 Interessados devem enviar CV para paloma.rodrigues@cbyk.com.br, com o assunto: “: Desenvolvedor(a) Python com AWS Jr. / Pl / Vaga temporária até 12/2026” Importante encaminhar a sua pretensão salaria

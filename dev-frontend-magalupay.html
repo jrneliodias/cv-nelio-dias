@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Nélio Dias - Desenvolvedor Frontend com experiência em React, Next.js, TypeScript, APIs REST e integrações de pagamento."
+    />
+    <meta
+      name="keywords"
+      content="Desenvolvedor Frontend, React, Next.js, TypeScript, JavaScript, HTML, CSS, APIs REST, Jest, pagamentos, Git, responsividade"
+    />
+    <meta name="author" content="Nélio Dias" />
+    <meta name="robots" content="index, follow" />
+    <title>Nélio Dias - Desenvolvedor Frontend | React, Next.js, TypeScript</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/cv.css" />
+    <style>
+      :root {
+        --skills-label-width: 22mm;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header itemscope itemtype="https://schema.org/Person">
+      <h1 itemprop="name">NÉLIO DIAS</h1>
+      <p class="role-title">Desenvolvedor Frontend | React, Next.js, TypeScript, APIs REST</p>
+      <section class="contact-info">
+        <a href="https://api.whatsapp.com/send?phone=5591989079292" itemprop="telephone">(91) 98907-9292</a>
+        <a href="mailto:jrneliodias@gmail.com" itemprop="email">jrneliodias@gmail.com</a>
+        <a href="https://nelio-dias-portfolio.vercel.app/" target="_blank" itemprop="url">Portfólio</a>
+        <a href="https://github.com/jrneliodias" target="_blank" itemprop="sameAs">GitHub</a>
+        <a href="https://www.linkedin.com/in/neliodias" target="_blank" itemprop="sameAs">LinkedIn</a>
+      </section>
+    </header>
+
+    <main>
+      <section>
+        <h2>Resumo</h2>
+        <p class="summary" itemprop="description">
+          Desenvolvedor Frontend com experiência em <strong>React, Next.js, TypeScript e JavaScript</strong>, com atuação em produtos de pagamento,
+          dashboards financeiros e plataformas SaaS. Trabalhei em fluxos de checkout com Pix, cartão e boleto, em portais B2B para gestão de recebíveis
+          e comissões, e em interfaces responsivas integradas a micro-serviços REST. Habituado a versionamento com <strong>Git</strong>, code reviews,
+          testes automatizados com <strong>Vitest e Playwright</strong>, e desenvolvimento assistido por IA com <strong>Claude Code</strong>.
+          Acostumado a colaborar com times de Backend, QA e Produto para entregar código limpo, legível e escalável.
+        </p>
+      </section>
+
+      <section itemscope itemtype="https://schema.org/ItemList">
+        <h2 itemprop="name">Competências técnicas</h2>
+        <div class="skills-grid" itemprop="itemListElement">
+          <div class="skill-label">Frontend</div>
+          <div class="skill-content">React, Next.js, TypeScript, JavaScript, HTML, CSS, Tailwind CSS, TanStack Query, React Hook Form, Zod, i18n</div>
+
+          <div class="skill-label">Qualidade</div>
+          <div class="skill-content">Git, Git Flow, code review, testes unitários, Vitest, Jest, React Testing Library, Playwright (E2E)</div>
+
+          <div class="skill-label">Integrações</div>
+          <div class="skill-content">APIs REST/JSON, autenticação JWT, Pix, gateways de pagamento (MAPFRE Pay, Mercado Pago), webhooks, Axios</div>
+
+          <div class="skill-label">Design/UX</div>
+          <div class="skill-content">Responsividade, Mobile First, componentização, acessibilidade básica, Figma</div>
+
+          <div class="skill-label">Cloud/DevOps</div>
+          <div class="skill-content">AWS S3, Docker, CI/CD (GitHub Actions, GitLab CI), variáveis de ambiente e secrets</div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Experiência profissional</h2>
+
+        <article class="experience-item" itemscope itemtype="https://schema.org/WorkExperience">
+          <div class="experience-header">
+            <h3>Desenvolvedor Full Stack | Startamus</h3>
+            <span class="period">Out/2022 - 2026</span>
+          </div>
+          <p class="company-context">
+            Startup B2B de desenvolvimento de software — projetos para clientes em fintech, SaaS médico e gaming.
+          </p>
+
+          <div class="project-list">
+            <div class="company-project">
+              <h4 class="project-name">Portal Billing | SPA financeira B2B — React, TypeScript e Vite</h4>
+              <ul class="compact-list">
+                <li>
+                  Desenvolvi portal financeiro B2B com <strong>React 19, TypeScript e Vite</strong> para operação de cobranças, inadimplência,
+                  comissões, recebíveis e relatórios — 35 páginas funcionais organizadas por domínio de negócio.
+                </li>
+                <li>
+                  Integrei <strong>APIs REST</strong> com Axios e TanStack Query para cache, paginação, filtros por query string e invalidação
+                  automática após mutations; formulários com React Hook Form + Zod, incluindo validação de CPF/CNPJ.
+                </li>
+                <li>
+                  Implementei RBAC com guards de rota, sidebar dinâmica por permissões e autenticação com interceptors Axios; suporte a
+                  multi-tenant/white-label com configuração visual dinâmica por cliente.
+                </li>
+                <li>
+                  Criei módulo de webhooks com CRUD, ping e histórico de request/response; dashboards com Recharts, exportação em PDF/XLS/JSON e
+                  i18n em PT-BR, EN e ES com <strong>i18next</strong>.
+                </li>
+                <li>
+                  Escrevi testes unitários com <strong>Vitest</strong> para validações de formulários e lógica de negócio; utilizei
+                  <strong>Claude Code</strong> com workflows de TDD para automatizar geração de testes e planejamento de tarefas.
+                </li>
+              </ul>
+            </div>
+
+            <div class="company-project">
+              <h4 class="project-name">Projeto com P4F / MAPFRE Pay | Checkout white-label em React</h4>
+              <ul class="compact-list">
+                <li>
+                  Desenvolvi fluxos de checkout white-label em <strong>React</strong> integrados a APIs de pagamento, com suporte a cartão,
+                  <strong>Pix</strong>, boleto e débito direto — adaptáveis por loja, marca, cores, logo e métodos de pagamento.
+                </li>
+                <li>
+                  Implementei tratamento de estados de sucesso, falha, criação de pedido e retorno de API, garantindo responsividade e experiência
+                  consistente nos fluxos críticos de pagamento.
+                </li>
+                <li>
+                  Contribuí para a modernização de uma base React legada, melhorando organização de código, manutenibilidade e tempo de carregamento,
+                  com colaboração entre Backend, QA e Produto.
+                </li>
+              </ul>
+            </div>
+
+            <div class="company-project">
+              <h4 class="project-name">Dashboards administrativos | Next.js, React e TypeScript — Sancor Seguros</h4>
+              <ul class="compact-list">
+                <li>
+                  Desenvolvi interfaces administrativas com <strong>Next.js, React, TypeScript e TanStack Query</strong>, consumindo APIs REST e
+                  organizando componentes reutilizáveis para operações internas da Sancor corretora de seguros.
+                </li>
+                <li>
+                  Participei de code reviews, padronização de componentes e melhoria contínua da base de código em colaboração com outros
+                  desenvolvedores.
+                </li>
+              </ul>
+            </div>
+
+            <div class="company-project">
+              <h4 class="project-name">Projeto com Nuuvem | Plataforma web de gaming — SvelteKit e TypeScript</h4>
+              <ul class="compact-list">
+                <li>
+                  Construí interface web responsiva com <strong>SvelteKit e TypeScript</strong>, incluindo carrosséis, grids adaptativos, overlay
+                  fullscreen e navegação por teclado; configurei autenticação JWT, internacionalização para 5 idiomas e otimizações de SEO.
+                </li>
+                <li>Estruturei pipeline de qualidade com GitLab CI/CD, Docker, testes unitários com Vitest e testes E2E com <strong>Playwright</strong>.</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <article class="experience-item" itemscope itemtype="https://schema.org/WorkExperience">
+          <div class="experience-header">
+            <h3>Desenvolvedor Full Stack | Gotech DS</h3>
+            <span class="period">Mai/2022 - Out/2022</span>
+          </div>
+          <ul class="compact-list">
+            <li>
+              Desenvolvi plataforma de e-commerce de rifas com <strong>16.000 usuários cadastrados</strong>, integração com gateway Mercado Pago,
+              dashboards administrativos com autenticação JWT e múltiplos níveis de acesso.
+            </li>
+            <li>Trabalhei em ambiente remoto com Scrum, <strong>Git Flow</strong>, Docker e colaboração entre frontend, backend e produto.</li>
+          </ul>
+        </article>
+
+        <article class="experience-item" itemscope itemtype="https://schema.org/WorkExperience">
+          <div class="experience-header">
+            <h3>Desenvolvedor | Universidade Federal do Pará</h3>
+            <span class="period">Ago/2021 - Jan/2022</span>
+          </div>
+          <ul class="compact-list">
+            <li>
+              Construí o <strong>Português Pai D'Égua</strong>, web app educacional com <strong>Next.js, TypeScript, NextAuth, Tailwind CSS, Prisma
+              e PostgreSQL</strong>, com exercícios de leitura, áudio e escrita para refugiados venezuelanos.
+            </li>
+          </ul>
+        </article>
+      </section>
+
+      <section>
+        <h2>Educação</h2>
+        <p class="education-row"><strong>Inglês Avançado C1</strong> | EF SET Certificate</p>
+        <p class="education-row"><strong>Análise e Desenvolvimento de Sistemas</strong> | GRAN Faculdade</p>
+        <p class="education-row"><strong>Engenharia de Controle e Automação</strong> | IFPA Campus Belém</p>
+      </section>
+    </main>
+  </body>
+</html>
