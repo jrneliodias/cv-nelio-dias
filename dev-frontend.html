@@ -106,9 +106,18 @@
                   controlados por ambiente.
                 </li>
                 <li>
-                  Integrei <strong>AWS Cognito</strong> como provedor de autenticação descentralizada no frontend e backend, com captura e repasse de
-                  tokens JWT para autenticação nas APIs, incluindo comunicação com o serviço de chat e a estrutura <strong>RAG da IA</strong> da
-                  plataforma.
+                  Integrei <strong>AWS Cognito</strong> como provedor de autenticação descentralizada no frontend e backend, com tokens JWT repassados
+                  para autenticação nas APIs e na comunicação com o serviço de chat e a estrutura RAG da plataforma.
+                </li>
+                <li>
+                  Trabalhei com estrutura <strong>RAG construída no AWS Bedrock</strong> utilizando <strong>Claude (Anthropic)</strong> como modelo
+                  principal, consultando documentações técnicas com base nas perguntas do chat e retornando respostas via API para os usuários da
+                  plataforma médica.
+                </li>
+                <li>
+                  Desenvolvi automação de relatórios médicos via <strong>API do Claude (Anthropic)</strong> com engenharia de prompt estruturada:
+                  exames médicos eram parseados em JSON e processados por prompts configurados para gerar relatórios iniciais de triagem, permitindo
+                  que médicos visualizassem rapidamente as primeiras análises dos resultados do paciente.
                 </li>
                 <li>
                   Desenvolvi notificações push com Firebase FCM e aumentei a confiabilidade dos fluxos críticos com suítes de testes Jest e logs
