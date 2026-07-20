@@ -91,6 +91,20 @@ strong {
   gap: 14px;
   flex-wrap: wrap;
   margin-top: 7px;
+  font-size: 8px;
+}
+
+.contact-info a {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.contact-info svg {
+  width: 10px;
+  height: 10px;
+  fill: currentColor;
+  flex-shrink: 0;
 }
 
 .summary {

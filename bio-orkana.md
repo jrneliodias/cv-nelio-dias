@@ -1,0 +1,5 @@
+Sou desenvolvedor full stack há mais de 4 anos, a maior parte desse tempo dentro de startups construindo produtos SaaS. Já passei por projetos bem diferentes entre si: um e-commerce de rifas com cerca de 16 mil usuários cadastrados, um SaaS para comunidades médicas que gera relatórios automaticamente e lida com dados sensíveis, o checkout de pagamentos de uma seguradora e uma plataforma de jogos com bastante gente usando ao mesmo tempo.
+
+Nesses projetos eu costumo entrar cedo, ainda na conversa com quem vai usar o sistema, e fico até o fim: ajudo a desenhar a arquitetura com o time, cuido da parte que o usuário vê e também do que segura o sistema por trás, como pagamento, login e infraestrutura na nuvem. Uso Node.js, Python, React e AWS no dia a dia, mas antes de sair escrevendo código prefiro entender o problema que a pessoa do outro lado está tentando resolver.
+
+Tenho inglês avançado e formação em Análise e Desenvolvimento de Sistemas. E alguns números pra mostrar que não é só conversa: reduzi em 40% o tempo de carregamento de um checkout e tirei do papel a automação de um processo de relatórios médicos que antes era feito manualmente.
