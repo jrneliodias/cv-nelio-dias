@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Nélio Dias - Desenvolvedor de Software Jr. com experiência em HTML, CSS, JavaScript, APIs REST, autenticação e controle de acesso."
+    />
+    <meta
+      name="keywords"
+      content="Desenvolvedor de Software Jr, HTML, CSS, JavaScript, TypeScript, React, APIs REST, JWT, RBAC, controle de acesso, testes, documentação técnica"
+    />
+    <meta name="author" content="Nélio Dias" />
+    <meta name="robots" content="index, follow" />
+    <title>Nélio Dias - Desenvolvedor de Software Jr. | HTML, CSS, JavaScript</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/cv.css" />
+  </head>
+
+  <body>
+    <header itemscope itemtype="https://schema.org/Person">
+      <h1 itemprop="name">NÉLIO DIAS</h1>
+      <p class="role-title">Desenvolvedor de Software Jr. | HTML, CSS, JavaScript</p>
+      <section class="contact-info">
+        <a href="https://api.whatsapp.com/send?phone=5591989079292" itemprop="telephone">(91) 98907-9292</a>
+        <a href="mailto:jrneliodias@gmail.com" itemprop="email">jrneliodias@gmail.com</a>
+        <a href="https://nelio-dias-portfolio.vercel.app/" target="_blank" itemprop="url">Portfólio</a>
+        <a href="https://github.com/jrneliodias" target="_blank" itemprop="sameAs">GitHub</a>
+        <a href="https://www.linkedin.com/in/neliodias" target="_blank" itemprop="sameAs">LinkedIn</a>
+      </section>
+    </header>
+
+    <main>
+      <section>
+        <h2>Resumo</h2>
+        <p class="summary" itemprop="description">
+          Desenvolvedor com mais de 4 anos de experiência em desenvolvimento web, atuando na criação de interfaces com <strong>HTML, CSS e JavaScript</strong>, integração de <strong>APIs REST</strong> e implementação de soluções de autenticação e controle de acesso (<strong>JWT, RBAC, guards de rota, permissões dinâmicas por perfil</strong>). Tenho facilidade para interpretar requisitos técnicos e traduzi-los em soluções práticas, testando e validando funcionalidades com <strong>Jest, Pytest e Playwright</strong>, e colaborando com times multidisciplinares via code review e Git Flow. Perfil analítico, organizado, proativo e com vontade de aprender novas ferramentas, incluindo plataformas low-code.
+        </p>
+      </section>
+
+      <section itemscope itemtype="https://schema.org/ItemList">
+        <h2 itemprop="name">Competências técnicas</h2>
+        <div class="skills-grid" itemprop="itemListElement">
+          <div class="skill-label">Frontend</div>
+          <div class="skill-content">HTML, CSS, JavaScript, TypeScript, React, Next.js, Tailwind CSS</div>
+
+          <div class="skill-label">Autenticação e controle de acesso</div>
+          <div class="skill-content">JWT, RBAC, guards de rota, permissões dinâmicas por perfil, autenticação e autorização em APIs REST</div>
+
+          <div class="skill-label">Backend</div>
+          <div class="skill-content">Python, FastAPI, Django REST Framework, Node.js, NestJS, APIs REST/JSON</div>
+
+          <div class="skill-label">Qualidade e testes</div>
+          <div class="skill-content">Git, Git Flow, code review, testes unitários e E2E, Jest, Pytest, Playwright, Vitest</div>
+
+          <div class="skill-label">Cloud e DevOps</div>
+          <div class="skill-content">Docker, CI/CD, GitHub Actions, GitLab CI, AWS (S3, Lambda, ECS/Fargate)</div>
+
+          <div class="skill-label">Banco de dados</div>
+          <div class="skill-content">PostgreSQL, SQL, Prisma ORM, SQLAlchemy, modelagem relacional, migrações</div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Experiência profissional</h2>
+
+        <article class="experience-item" itemscope itemtype="https://schema.org/WorkExperience">
+          <div class="experience-header">
+            <h3>Desenvolvedor Full Stack - Startamus</h3>
+            <span class="period">Out/2022 - 2026</span>
+          </div>
+          <p class="company-context">Startup B2B de desenvolvimento de software — projetos para clientes em SaaS médico, fintech e gaming</p>
+
+          <div class="project-list">
+            <div class="company-project">
+              <h4 class="project-name">Portal Billing — SPA financeira B2B com React, TypeScript e Vite</h4>
+              <ul class="compact-list">
+                <li>
+                  Desenvolvi portal financeiro B2B com <strong>React, TypeScript e Vite</strong> para operação de cobranças, inadimplência, comissões, recebíveis, webhooks e relatórios automatizados — 35 páginas, 259 componentes e 61 hooks organizados por domínio.
+                </li>
+                <li>
+                  Implementei <strong>RBAC com guards de rota, sidebar dinâmica por permissões e autenticação com interceptors Axios</strong>; integrei APIs REST com Axios e TanStack Query para cache, paginação, filtros e invalidação após mutations.
+                </li>
+                <li>
+                  Construí formulários com React Hook Form + Zod, validação de CPF/CNPJ e exportação em PDF/XLS/JSON; módulo de webhooks com CRUD, ping, reenvio e histórico de request/response; i18n em PT-BR, EN e ES.
+                </li>
+              </ul>
+            </div>
+
+            <div class="company-project">
+              <h4 class="project-name">Dashboards administrativos e APIs REST</h4>
+              <ul class="compact-list">
+                <li>
+                  Desenvolvi dashboards com <strong>Next.js, React e TypeScript</strong> consumindo APIs REST, e atuei em APIs com <strong>Django REST Framework e PostgreSQL</strong>, colaborando com times de frontend, backend e QA em code reviews e integração contínua.
+                </li>
+              </ul>
+            </div>
+
+            <div class="company-project">
+              <h4 class="project-name">Projeto com Nuuvem — Plataforma web de gaming</h4>
+              <ul class="compact-list">
+                <li>
+                  Desenvolvi interface web em <strong>SvelteKit + TypeScript</strong> com catálogo de jogos, <strong>autenticação JWT</strong> e internacionalização para 5 idiomas; configurei qualidade e entrega com GitLab CI/CD, Docker e testes automatizados com Playwright.
+                </li>
+              </ul>
+            </div>
+
+            <div class="company-project">
+              <h4 class="project-name">Projeto com ALLM — Plataforma SaaS B2B para comunidades médicas</h4>
+              <ul class="compact-list">
+                <li>
+                  Participei do desenvolvimento backend em <strong>NestJS + TypeScript</strong>, implementando funcionalidades de comunidades médicas, fóruns, casos clínicos e notificações multi-plataforma.
+                </li>
+                <li>
+                  Contribuí na estruturação de deploy com Docker, GitHub Actions, AWS ECS/Fargate e Secrets Manager, apoiando ambientes separados e execução segura de migrations com Prisma.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <article class="experience-item" itemscope itemtype="https://schema.org/WorkExperience">
+          <div class="experience-header">
+            <h3>Desenvolvedor Full Stack - Gotech DS</h3>
+            <span class="period">Mai/2022 - Out/2022</span>
+          </div>
+          <ul class="compact-list">
+            <li>
+              Desenvolvi plataforma de e-commerce de rifas com aproximadamente <strong>16.000 usuários cadastrados</strong>, integrando gateway Mercado Pago, com dashboards administrativos, <strong>autenticação JWT e múltiplos níveis de acesso</strong>.
+            </li>
+            <li>Trabalhei em ambiente remoto com Scrum, Git Flow e Docker, contribuindo em frontend, backend e integrações.</li>
+          </ul>
+        </article>
+
+        <article class="experience-item" itemscope itemtype="https://schema.org/WorkExperience">
+          <div class="experience-header">
+            <h3>Desenvolvedor Full Stack - Universidade Federal do Pará</h3>
+            <span class="period">Ago/2021 - Jan/2022</span>
+          </div>
+          <ul class="compact-list">
+            <li>
+              Construí o <strong>Português Pai D'Égua</strong>, web app educacional em Next.js, TypeScript, NextAuth, Tailwind CSS, Prisma e PostgreSQL para refugiados venezuelanos.
+            </li>
+          </ul>
+        </article>
+      </section>
+
+      <section>
+        <h2>Educação</h2>
+        <p class="education-row"><strong>Inglês Avançado - C1</strong> - EF SET Certificate</p>
+        <p class="education-row"><strong>Engenharia de Controle e Automação</strong> - IFPA Campus Belém - Concluído</p>
+        <p class="education-row"><strong>Análise e Desenvolvimento de Sistemas</strong> - GRAN Faculdade - Concluído</p>
+      </section>
+    </main>
+  </body>
+</html>
