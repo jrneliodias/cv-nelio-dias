@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nélio Dias - Desenvolvedor Backend Python | Python, Django, FastAPI, PostgreSQL, APIs REST</title>
+    <link rel="stylesheet" href="css/cv.css" />
+    <style>
+      :root {
+        --skills-label-width: 29mm;
+      }
+    </style>
+  </head>
+  <body>
+    <header itemscope itemtype="https://schema.org/Person">
+      <h1 itemprop="name">NÉLIO DIAS</h1>
+      <p class="role-title">Desenvolvedor Backend Python | Django, FastAPI, PostgreSQL, APIs REST</p>
+      <section class="contact-info">
+        <a href="https://api.whatsapp.com/send?phone=5591989079292" itemprop="telephone">(91) 98907-9292</a>
+        <a href="mailto:jrneliodias@gmail.com" itemprop="email">jrneliodias@gmail.com</a>
+        <a href="https://nelio-dias-portfolio.vercel.app/" target="_blank" itemprop="url">Portfólio</a>
+        <a href="https://github.com/jrneliodias" target="_blank" itemprop="sameAs">GitHub</a>
+        <a href="https://www.linkedin.com/in/neliodias" target="_blank" itemprop="sameAs">LinkedIn</a>
+      </section>
+    </header>
+    <main>
+      <section>
+        <h2>Resumo</h2>
+        <p class="summary" itemprop="description">
+          Desenvolvedor Backend Python com experiência em <strong>APIs REST, integrações entre sistemas, processamento assíncrono e
+          testes automatizados</strong>. Atuação com <strong>Python, Django REST Framework, FastAPI, SQLAlchemy, PostgreSQL, Docker e
+          Pytest</strong>, escrevendo código organizado e testável, aplicando princípios de <strong>Clean Code e SOLID</strong>.
+          Experiência com sistemas críticos no segmento de fintech e seguros — contribuindo para integração de corretoras como
+          <strong>MAPFRE, Sura e HDI</strong> em plataforma white-label. Vivência com <strong>Git, Scrum</strong> e colaboração em squads
+          multidisciplinares (Backend, QA, Produto), participando de code reviews, cerimônias ágeis e documentação técnica. Familiaridade
+          com <strong>MySQL</strong> e conhecimento de bancos não relacionais como <strong>MongoDB</strong>. Utiliza <strong>Claude Code</strong>
+          de forma ética e responsável como apoio ao desenvolvimento, testes e documentação. Inglês avançado (C1).
+        </p>
+      </section>
+
+      <section itemscope itemtype="https://schema.org/ItemList">
+        <h2 itemprop="name">Competências técnicas</h2>
+        <div class="skills-grid" itemprop="itemListElement">
+          <div class="skill-label">Python</div>
+          <div class="skill-content">Django REST Framework, FastAPI, SQLAlchemy 2.0, Alembic, Pytest, Ruff, processamento assíncrono</div>
+          <div class="skill-label">APIs REST</div>
+          <div class="skill-content">Construção e consumo de APIs REST/JSON, webhooks, integrações entre sistemas, Evolution API, Twilio, Firebase FCM</div>
+          <div class="skill-label">Banco de dados</div>
+          <div class="skill-content">PostgreSQL, SQL, modelagem relacional, migrações, Redis, familiaridade com MySQL, conhecimento de MongoDB</div>
+          <div class="skill-label">Qualidade e testes</div>
+          <div class="skill-content">Pytest, testes automatizados, code review, Ruff, CI/CD (GitHub Actions, GitLab CI)</div>
+          <div class="skill-label">Cloud e DevOps</div>
+          <div class="skill-content">AWS (Lambda, SQS, S3, ECS/Fargate, Cognito), Docker, Secrets Manager</div>
+          <div class="skill-label">Arquitetura</div>
+          <div class="skill-content">Clean Code, SOLID, organização por domínio, noções de DDD, mensageria assíncrona (AWS SQS)</div>
+          <div class="skill-label">Metodologias</div>
+          <div class="skill-content">Scrum, Git, Git Flow, cerimônias ágeis (planejamento, refinamento, acompanhamento)</div>
+          <div class="skill-label">IA / Claude Code</div>
+          <div class="skill-content">Claude Code (uso ético e responsável em SDD/TDD), LangChain, RAG, API do Claude (Anthropic)</div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Experiência profissional</h2>
+
+        <article class="experience-item" itemscope itemtype="https://schema.org/WorkExperience">
+          <div class="experience-header">
+            <h3>Desenvolvedor Full Stack Pleno - Startamus</h3>
+            <span class="period">Out/2022 - 2026</span>
+          </div>
+          <p class="company-context">Startup B2B de desenvolvimento de software — atuei em projetos para clientes de diferentes segmentos, incluindo SaaS médico, seguros/fintech e gaming</p>
+
+          <div class="project-list">
+            <div class="company-project">
+              <h4 class="project-name">Projeto com ALLM — Plataforma SaaS B2B para comunidades médicas</h4>
+              <ul class="compact-list">
+                <li>
+                  Integrei <strong>AWS SQS</strong> para automação de geração de relatórios médicos de forma assíncrona, desacoplando o processamento
+                  da requisição e garantindo resiliência e rastreabilidade das filas em produção.
+                </li>
+                <li>
+                  Desenvolvi automação de relatórios médicos via <strong>API do Claude (Anthropic)</strong> com engenharia de prompt estruturada:
+                  exames eram parseados em JSON e processados por prompts configurados para gerar relatórios iniciais de triagem, acelerando a
+                  análise clínica dos resultados dos pacientes.
+                </li>
+                <li>
+                  Trabalhei com estrutura <strong>RAG no AWS Bedrock</strong> utilizando Claude como modelo principal — consultando documentações
+                  técnicas com base nas perguntas do chat e retornando respostas via API para os usuários da plataforma.
+                </li>
+                <li>
+                  Construí pipeline de processamento de mídia com <strong>AWS Lambda</strong> para anonimização assíncrona de imagens médicas;
+                  utilizei <strong>Redis</strong> como cache de resultados de query e tokens, reduzindo latência e carga no banco.
+                </li>
+                <li>
+                  Integrei <strong>AWS Cognito</strong> como provedor de autenticação, com tokens JWT repassados para APIs e comunicação com o
+                  serviço de chat e a estrutura RAG.
+                </li>
+                <li>
+                  Utilizei <strong>Claude Code</strong> de forma ética como apoio a testes e documentação técnica, em codebase Python de
+                  múltiplos módulos.
+                </li>
+                <li>
+                  Estruturei automações de deploy com <strong>Docker, GitHub Actions, AWS ECS/Fargate e Secrets Manager</strong>, apoiando ambientes
+                  separados e execução segura de migrations.
+                </li>
+              </ul>
+            </div>
+
+            <div class="company-project">
+              <h4 class="project-name">Dashboards administrativos e APIs REST — Python + Django</h4>
+              <ul class="compact-list">
+                <li>
+                  Desenvolvi e mantive APIs com <strong>Django REST Framework, PostgreSQL e integrações com AWS S3 e Twilio</strong>, apoiando
+                  funcionalidades web e mobile de clientes B2B.
+                </li>
+                <li>
+                  Contribuí na definição de padrões de código, organização de endpoints, revisões técnicas e integração contínua para melhorar
+                  manutenção e previsibilidade das entregas.
+                </li>
+                <li>
+                  Atuei na modernização de APIs legadas, alinhando padrões REST, cobertura de testes e documentação para facilitar integrações
+                  entre sistemas de clientes com diferentes stacks.
+                </li>
+              </ul>
+            </div>
+
+            <div class="company-project">
+              <h4 class="project-name">Projeto com P4F / MAPFRE Pay — Integração com corretoras de seguros</h4>
+              <ul class="compact-list">
+                <li>
+                  Participei da construção da plataforma white-label de pagamentos que viabilizou a integração de corretoras de seguros como
+                  <strong>MAPFRE, Sura e HDI</strong>, contribuindo para o crescimento da base de clientes ao longo de dois anos de parceria.
+                </li>
+                <li>
+                  Trabalhei na integração entre sistemas — conectando fluxos de checkout, APIs de pagamento, regras de negócio por loja e
+                  rotinas de backend — em colaboração com Backend, QA e Produto.
+                </li>
+              </ul>
+            </div>
+
+            <div class="company-project">
+              <h4 class="project-name">Projeto com Nuuvem — Plataforma web gaming</h4>
+              <ul class="compact-list">
+                <li>Configurei GitLab CI/CD, Docker e testes automatizados para apoiar deploy contínuo e validação de fluxos críticos.</li>
+                <li>Implementei autenticação JWT, dashboard administrativo e integração com APIs para catálogo de jogos e métricas internas.</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <article class="experience-item" itemscope itemtype="https://schema.org/WorkExperience">
+          <div class="experience-header">
+            <h3>Desenvolvedor Full Stack - Gotech DS</h3>
+            <span class="period">Mai/2022 - Out/2022</span>
+          </div>
+          <ul class="compact-list">
+            <li>
+              Desenvolvi plataforma de e-commerce de rifas com aproximadamente <strong>16.000 usuários cadastrados</strong>, integrando gateway
+              Mercado Pago e API Java para backend.
+            </li>
+            <li>
+              Criei dashboards administrativos para gerenciamento de sorteios, usuários, afiliados e operações financeiras, com autenticação JWT e
+              múltiplos níveis de acesso.
+            </li>
+            <li>Trabalhei em ambiente remoto com <strong>Scrum</strong>, Git Flow e Docker, contribuindo em backend, frontend e integrações.</li>
+          </ul>
+        </article>
+
+        <article class="experience-item" itemscope itemtype="https://schema.org/WorkExperience">
+          <div class="experience-header">
+            <h3>Desenvolvedor - Universidade Federal do Pará</h3>
+            <span class="period">Ago/2021 - Jan/2022</span>
+          </div>
+          <ul class="compact-list">
+            <li>
+              Desenvolvi o <strong>LABVCON v2.0</strong> em <strong>Python e Streamlit</strong> para aplicação de controladores avançados em
+              protótipos reais com Arduino, com monitoramento de dados em tempo real e métricas de eficiência.
+            </li>
+            <li>
+              Construí o <strong>Português Pai D'Égua</strong>, web app educacional para refugiados venezuelanos com Next.js, TypeScript, NextAuth,
+              Tailwind CSS, Prisma e PostgreSQL.
+            </li>
+          </ul>
+        </article>
+      </section>
+
+      <section>
+        <h2>Projeto complementar</h2>
+        <article class="experience-item">
+          <div class="experience-header">
+            <h3>Esthetic Fast Scheduler — Backend Python para agendamento via WhatsApp com agente LLM</h3>
+            <span class="period">2026</span>
+          </div>
+          <ul class="compact-list">
+            <li>
+              Desenvolvi backend em <strong>FastAPI</strong> para automação de agendamentos via WhatsApp, com integração à Evolution API, webhook
+              de mensagens, fluxo conversacional persistido e API administrativa.
+            </li>
+            <li>
+              Construí agente com <strong>LangChain e tool-calling</strong> com suporte multi-provider (Anthropic Claude e Google Gemini),
+              ferramentas customizadas para agendamento, cancelamento e histórico, com memória conversacional persistida em PostgreSQL.
+            </li>
+            <li>
+              Modelei esquema relacional com <strong>SQLAlchemy 2.0, PostgreSQL e Alembic</strong>, incluindo tenants, serviços, horários de
+              funcionamento, bloqueios, agendamentos e conversas.
+            </li>
+            <li>
+              Implementei motor de disponibilidade considerando duração de serviços, buffers, conflitos de agenda e status de agendamentos;
+              apliquei <strong>Pytest</strong>, logs estruturados em JSON, rate limiting e configuração por variáveis de ambiente.
+            </li>
+          </ul>
+        </article>
+      </section>
+
+      <section>
+        <h2>Educação</h2>
+        <p class="education-row"><strong>Inglês Avançado - C1</strong> - EF SET Certificate</p>
+        <p class="education-row"><strong>Análise e Desenvolvimento de Sistemas</strong> - GRAN Faculdade</p>
+        <p class="education-row"><strong>Engenharia de Controle e Automação</strong> - IFPA Campus Belém</p>
+      </section>
+    </main>
+  </body>
+</html>
