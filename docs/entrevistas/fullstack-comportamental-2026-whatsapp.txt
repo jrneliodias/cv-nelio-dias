@@ -1,0 +1,98 @@
+*1. Você já foi responsável por arquitetar uma solução de ponta a ponta, desde o entendimento e planejamento da necessidade até o desenvolvimento, deploy e acompanhamento em produção? Conte como foi essa experiência.*
+
+Sim. O caso mais completo foi o Portal Billing, uma plataforma financeira B2B que construí do zero na Startamus para a P4F, cliente com quem a gente já tinha uma parceria de dois anos por causa do checkout white-label.
+
+Começou com conversas com o time de operação financeira para entender como eles lidavam com cobrança, inadimplência, comissões e recebíveis, e o que era feito na mão. A partir disso, defini a arquitetura do frontend em React 19, TypeScript e Vite, organizada por domínio: cada área com seus componentes, hooks, services, schemas Zod e tipos. Também desenhei o controle de acesso (RBAC com guards de rota e sidebar dinâmica por permissão), a autenticação via interceptors e o white-label por domínio, que era requisito para atender mais de um cliente na mesma base.
+
+No desenvolvimento entraram módulo de webhooks com reenvio e histórico, upload de CSV, exportação assíncrona e agendamento de relatórios por email e SFTP, além de i18n em três idiomas. O deploy ficou no Jenkins com Firebase Hosting, separando homologação e produção, e o acompanhamento em produção passou a ser feito com Sentry, o que ajudou a pegar erros antes de o usuário reportar.
+
+Hoje o sistema tem 35 páginas e mais de 250 componentes. A arquitetura white-label facilitou a entrada de corretoras como MAPFRE, Sura e HDI na plataforma.
+
+
+*2. Qual é o fluxo de trabalho com o qual você está mais acostumado, desde a idealização e planejamento até o desenvolvimento, deploy e acompanhamento em produção? Como você participa de cada etapa?*
+
+Estou acostumado com um fluxo ágil, em sprints, com Produto, Design, QA e Desenvolvimento trabalhando juntos.
+
+- *Idealização:* participo do refinamento entendendo o problema antes da solução. Pergunto quem vai usar, qual dor está sendo resolvida e o que define que a entrega deu certo. Muitas vezes é aqui que aparece uma regra de negócio que mudaria todo o desenho.
+
+- *Planejamento:* ajudo a quebrar a demanda em tarefas menores, aponto dependências entre front e back e estimo esforço. Quando a tarefa é maior, escrevo um plano técnico curto antes de codar, e uso Claude Code para acelerar esse planejamento e a geração de testes.
+
+- *Desenvolvimento:* trabalho com branch por tarefa e PR revisado. Escrevo testes para as regras críticas (Jest, Vitest, Pytest, Playwright no E2E) e participo de code review dos dois lados.
+
+- *Deploy:* pipeline de CI/CD com GitHub Actions, GitLab CI ou Jenkins, com testes rodando antes do merge, ambientes separados, secrets fora do código e migrations controladas. Já configurei pipelines desse tipo no ALLM (ECS/Fargate) e no projeto da Nuuvem.
+
+- *Produção:* acompanho com Sentry e logs estruturados, valido com Produto se o comportamento está como esperado e trago o que aprendi de volta para o backlog.
+
+
+*3. Como você gerencia seu tempo e organiza suas prioridades diante de múltiplas demandas e prazos?*
+
+Na Startamus eu sempre atendi mais de um cliente ao mesmo tempo, então já tive que lidar com isso bastante.
+
+Primeiro, deixo tudo visível num lugar só, normalmente o board do time. Depois priorizo por impacto e prazo: o que está bloqueando outra pessoa ou afeta produção vem antes, seguido do que tem data combinada com o cliente. O que é melhoria e pode esperar fica para depois.
+
+Também tento proteger blocos de foco para tarefas mais complexas, em vez de ficar alternando o tempo todo entre projetos, porque trocar de contexto custa caro. Quebro tarefas grandes em entregas menores, assim consigo mostrar progresso e ajustar o rumo cedo.
+
+E quando percebo que não vai caber tudo, aviso cedo. Prefiro alinhar com o líder ou com Produto o que sai primeiro do que descobrir no último dia que um prazo vai estourar.
+
+
+*4. Como você conduz situações de bloqueio ou impedimento durante o trabalho? Em que momento busca apoio de outras pessoas ou do time?*
+
+Primeiro tento entender exatamente onde está o bloqueio: reproduzo o problema, leio logs e documentação e isolo o que funciona do que não funciona. Muitas vezes só esse exercício já resolve.
+
+Mas me dou um limite de tempo. Se passei mais ou menos uma ou duas horas sem progresso real, ou se o bloqueio depende de algo fora do meu controle (uma API de outro time, uma definição de Produto, um acesso), busco ajuda na hora. Ficar travado sozinho um dia inteiro custa mais para o time do que pedir ajuda.
+
+Quando peço ajuda, chego com contexto: o que estou tentando fazer, o que já tentei e onde acho que está o problema. Isso respeita o tempo da outra pessoa e costuma resolver rápido. Se o bloqueio afeta prazo, sinalizo na daily ou direto para o responsável, e enquanto isso adianto outra parte da tarefa que não depende daquilo.
+
+
+*5. Conte sobre uma situação em que outro membro do time reconheceu sua contribuição ou apoio na resolução de um problema ou desafio complexo. Qual foi sua participação?*
+
+No projeto ALLM, a plataforma SaaS médica, os médicos levavam bastante tempo para fazer a primeira leitura dos exames de cada paciente antes de uma avaliação mais detalhada. Era um processo manual e repetitivo.
+
+Propus e desenvolvi uma automação usando a API do Claude: os exames eram convertidos em JSON estruturado e processados por prompts configurados para gerar um relatório inicial de triagem. Minha participação foi da modelagem do formato dos dados até a engenharia de prompt e a integração com o backend em NestJS. Também ajustei os prompts junto com quem conhecia o domínio, até o resultado ficar útil de verdade para o médico.
+
+Quando a funcionalidade entrou em uso, o time e o cliente reconheceram que ela tirou do papel algo que antes era feito na mão e que dava agilidade ao atendimento. Para mim o mais importante foi ter partido de uma dor real do usuário, e não da tecnologia.
+
+
+*6. Conte sobre uma situação em que você precisou trabalhar em conjunto com pessoas de outras áreas ou com perfis não técnicos. Como conduziu essa colaboração?*
+
+No Portal Billing trabalhei bem perto do time de operação financeira, que não era técnico. Eles sabiam exatamente como funcionava cobrança, comissão e inadimplência, mas não falavam em termos de tela, endpoint ou permissão.
+
+O que funcionou foi trazer a conversa para o dia a dia deles. Em vez de perguntar "quais campos vocês precisam?", eu pedia para me mostrarem como faziam hoje, que planilha usavam e onde perdiam tempo. Daí saíram coisas como o upload de CSV, os relatórios agendados por email e SFTP e os filtros que eles realmente usavam.
+
+Também evitei jargão. Para validar, mostrava protótipos ou telas funcionando em homologação, porque é muito mais fácil uma pessoa não técnica reagir a algo concreto do que a uma descrição. E deixei registradas as decisões, para não depender de memória. Isso reduziu retrabalho e deu a eles confiança de que o sistema estava sendo feito para o processo deles.
+
+
+*7. Conte sobre uma situação em que você discordou de uma decisão de produto, negócio ou de outro membro do time. Como conduziu a situação?*
+
+No Portal Billing, a ideia inicial para a exportação de relatórios era gerar o arquivo na hora, com o usuário esperando o download na tela. Eu discordei, porque alguns relatórios financeiros tinham volume grande. Gerar de forma síncrona ia travar a tela, gerar timeout e virar reclamação depois.
+
+Não fui direto dizendo que estava errado. Levei o ponto com dados: mostrei o volume esperado de alguns clientes e o que aconteceria na prática com uma exportação desse tamanho. Também propus uma alternativa, a exportação assíncrona, em que o usuário solicita, continua usando o sistema e é avisado quando o arquivo fica pronto em PDF, XLS ou JSON.
+
+Deixei claro que a decisão final era do Produto e que, se mesmo assim quisessem seguir com a versão síncrona por prazo, eu entendia, desde que o risco ficasse registrado. Acabamos indo pela exportação assíncrona, e depois essa mesma base foi reaproveitada para o agendamento automático de relatórios.
+
+
+*8. Quando recebe uma demanda urgente e percebe que o escopo é maior do que o tempo disponível, como você avalia as prioridades e conduz a situação?*
+
+A primeira coisa é não aceitar em silêncio um prazo que eu já sei que não vai fechar. Assim que percebo, aviso.
+
+Em seguida tento separar o essencial do desejável: qual é o problema que precisa estar resolvido nessa data? Quase sempre existe um núcleo que resolve a urgência e um conjunto de melhorias que pode vir depois. Faço uma estimativa honesta de cada parte e levo isso para Produto ou para o líder com opções concretas, por exemplo "até sexta consigo entregar A e B com qualidade; C fica para a semana seguinte", em vez de só dizer que não dá.
+
+Não negocio testes nas partes críticas nem segurança para ganhar tempo, porque isso volta como bug em produção. Depois de alinhado, deixo registrado o que ficou de fora e mantenho todos atualizados sobre o andamento, principalmente se surgir algum risco novo no meio do caminho.
+
+
+*9. Conte sobre uma situação de conflito ou divergência com alguém do time. Como você conduziu a situação e qual foi o resultado?*
+
+Num dos projetos React tive uma divergência com um colega em code review sobre gerenciamento de estado. Ele queria centralizar tudo em Context API. Eu defendia usar TanStack Query para os dados do servidor e Zustand para o estado local, porque em telas com muita interação o Context acabava re-renderizando mais do que devia.
+
+A discussão começou a ficar travada nos comentários do PR, então propus uma conversa rápida por chamada, que é muito melhor para resolver esse tipo de coisa do que trocar comentários. Antes, preparei um exemplo pequeno mostrando a diferença de re-render nas duas abordagens, para tirar a conversa do campo da opinião.
+
+Também ouvi o ponto dele, que era válido: ele estava preocupado em não adicionar dependência sem necessidade. Chegamos a um meio-termo: Context para coisas globais e estáveis, como tema e sessão, e TanStack Query e Zustand para o resto, com isso documentado no padrão do projeto. O resultado foi um critério claro que o time passou a seguir, e a relação com o colega continuou boa.
+
+
+*10. Imagine que uma entrega precisa ser realizada com urgência, mas Produto, Design, Operação e Desenvolvimento têm necessidades ou entendimentos diferentes sobre o que deve ser entregue. Como você conduziria essa situação?*
+
+Primeiro, juntaria todo mundo numa conversa curta em vez de resolver em paralelo com cada área. Visões diferentes em reuniões separadas só aumentam o desalinhamento.
+
+Nessa conversa, começaria pelo objetivo: qual problema essa entrega urgente precisa resolver e para quem. Quando todos concordam com o objetivo, fica mais fácil ver que muitas das diferenças são sobre o "como", e não sobre o "o quê". Depois, colocaria lado a lado o que cada área precisa: Operação diz o que não pode faltar para funcionar no dia a dia, Design o que é crítico para a experiência, Produto o que é prioridade de negócio e Desenvolvimento o que é viável no prazo e quais riscos existem.
+
+Com isso, proporia um escopo mínimo que resolve a urgência, deixando claro o que fica para uma segunda entrega. Se ainda houvesse impasse, quem decide a prioridade é Produto, e meu papel é garantir que essa decisão seja tomada com informação técnica clara sobre custo e risco. No fim, registraria o que foi acordado e manteria todos atualizados durante a execução, para não ter surpresa na entrega.
